@@ -1,6 +1,6 @@
 ---Host/Student info----
 
-Running on Tue Nov 11 06:53:21 PM EST 2025
+Running on Tue Nov 11 07:22:25 PM EST 2025
 Run by curtis - () on host
  Static hostname: generic-vm
       Machine ID: 25b2a6dfdc464e25b56980eee4b77363
@@ -9,9 +9,7 @@ a98742121b14ebe6350c4bf8245d0062  ./check-assign2-script.sh - a98742121b14ebe635
 ------------------------
 
 ---Start of Assignment2.sh Check------
-Retrieved makecontainers.sh script
 ---Running makecontainers.sh----------
-Retrieving script library file
 This script performs many tasks. Please be patient
 To see more about what it is doing as it does it, use the --verbose option
 You may ignore any messages about Open vSwitch or dpkg-preconfigure being unable to re-open stdin
@@ -21,8 +19,8 @@ Network mgmt deleted
 Network lan created
 Network mgmt created
 Launching openwrt
-Retrieving image: Unpack: 100% (1.71GB/s)                                          Retrieving image: Unpack: 100% (1.71GB/s)                                          Launching server1
-Retrieving image: Unpack: 100% (1.32GB/s)                                          Retrieving image: Unpack: 100% (1.32GB/s)                                          Pushing /home/curtis/.ssh/id_ed25519.pub to /home/remoteadmin/.ssh/id_ed25519.pub: 100% (266.85MB/s)                                                                                                     Waiting for server1 restart
+Retrieving image: Unpack: 100% (1.63GB/s)                                          Retrieving image: Unpack: 100% (1.63GB/s)                                          Launching server1
+Retrieving image: Unpack: 100% (1.77GB/s)                                          Retrieving image: Unpack: 100% (1.77GB/s)                                          Pushing /home/curtis/.ssh/id_ed25519.pub to /home/remoteadmin/.ssh/id_ed25519.pub: 100% (253.20MB/s)                                                                                                     Waiting for server1 restart
 # Host server1-mgmt found: line 4
 # Host server1-mgmt found: line 5
 # Host server1-mgmt found: line 6
@@ -39,10 +37,10 @@ Get:4 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [2,81
 Get:5 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [3,074 kB]
 Get:6 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [408 kB]
 Get:7 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [4,700 kB]
-Get:8 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1,242 kB]
-Get:9 http://archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [308 kB]
-Get:10 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [876 kB]
-Fetched 13.7 MB in 2s (5,493 kB/s)
+Get:8 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [876 kB]
+Get:9 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1,242 kB]
+Get:10 http://archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [308 kB]
+Fetched 13.7 MB in 3s (4,448 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -117,7 +115,7 @@ Get:39 http://archive.ubuntu.com/ubuntu jammy/main amd64 xz-utils amd64 5.2.5-2u
 Get:40 http://archive.ubuntu.com/ubuntu jammy/main amd64 bzip2 amd64 1.0.8-5build1 [34.8 kB]
 Get:41 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libldap-common all 2.5.19+dfsg-0ubuntu0.22.04.1 [16.1 kB]
 Get:42 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libsasl2-modules amd64 2.1.27+dfsg2-3ubuntu1.2 [68.8 kB]
-Fetched 15.9 MB in 6s (2,537 kB/s)
+Fetched 15.9 MB in 3s (6,354 kB/s)
 Selecting previously unselected package perl-modules-5.34.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 19276 files and directories currently installed.)
 Preparing to unpack .../00-perl-modules-5.34_5.34.0-3ubuntu1.5_all.deb ...
@@ -384,17 +382,17 @@ network:
        valid_lft forever preferred_lft forever
     inet6 ::1/128 scope host 
        valid_lft forever preferred_lft forever
-82: eth0@if83: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
-    link/ether 00:16:3e:47:1a:67 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+104: eth0@if105: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 00:16:3e:f3:ee:a6 brd ff:ff:ff:ff:ff:ff link-netnsid 0
     inet 192.168.16.241/24 brd 192.168.16.255 scope global eth0
        valid_lft forever preferred_lft forever
-    inet6 fe80::216:3eff:fe47:1a67/64 scope link 
+    inet6 fe80::216:3eff:fef3:eea6/64 scope link 
        valid_lft forever preferred_lft forever
-84: eth1@if85: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
-    link/ether 00:16:3e:f8:cb:82 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+106: eth1@if107: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 00:16:3e:6b:08:a1 brd ff:ff:ff:ff:ff:ff link-netnsid 0
     inet 172.16.1.241/24 brd 172.16.1.255 scope global eth1
        valid_lft forever preferred_lft forever
-    inet6 fe80::216:3eff:fef8:cb82/64 scope link 
+    inet6 fe80::216:3eff:fe6b:8a1/64 scope link 
        valid_lft forever preferred_lft forever
 --ip r----------------
 default via 192.168.16.2 dev eth0 proto static 
@@ -407,47 +405,47 @@ default via 192.168.16.2 dev eth0 proto static
      Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
     Drop-In: /run/systemd/system/service.d
              └─zzz-lxc-service.conf
-     Active: active (running) since Tue 2025-11-11 23:54:59 UTC; 11s ago
+     Active: active (running) since Wed 2025-11-12 00:24:02 UTC; 11s ago
        Docs: https://httpd.apache.org/docs/2.4/
    Main PID: 2092 (apache2)
       Tasks: 55 (limit: 4545)
-     Memory: 5.6M
-        CPU: 61ms
+     Memory: 5.3M
+        CPU: 56ms
      CGroup: /system.slice/apache2.service
              ├─2092 /usr/sbin/apache2 -k start
              ├─2093 /usr/sbin/apache2 -k start
              └─2094 /usr/sbin/apache2 -k start
 
-Nov 11 23:54:59 server1 systemd[1]: Starting The Apache HTTP Server...
-Nov 11 23:54:59 server1 apachectl[2091]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 192.168.16.21. Set the 'ServerName' directive globally to suppress this message
-Nov 11 23:54:59 server1 systemd[1]: Started The Apache HTTP Server.
+Nov 12 00:24:02 server1 systemd[1]: Starting The Apache HTTP Server...
+Nov 12 00:24:02 server1 apachectl[2091]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 192.168.16.21. Set the 'ServerName' directive globally to suppress this message
+Nov 12 00:24:02 server1 systemd[1]: Started The Apache HTTP Server.
 
 ● squid.service - Squid Web Proxy Server
      Loaded: loaded (/lib/systemd/system/squid.service; enabled; vendor preset: enabled)
     Drop-In: /run/systemd/system/service.d
              └─zzz-lxc-service.conf
-     Active: active (running) since Tue 2025-11-11 23:54:56 UTC; 14s ago
+     Active: active (running) since Wed 2025-11-12 00:23:59 UTC; 14s ago
        Docs: man:squid(8)
    Main PID: 1429 (squid)
       Tasks: 4 (limit: 4545)
      Memory: 17.6M
-        CPU: 176ms
+        CPU: 175ms
      CGroup: /system.slice/squid.service
              ├─1429 /usr/sbin/squid --foreground -sYC
              ├─1431 "(squid-1)" --kid squid-1 --foreground -sYC
              ├─1432 "(logfile-daemon)" /var/log/squid/access.log
              └─1433 "(pinger)"
 
-Nov 11 23:54:56 server1 squid[1431]: Using Least Load store dir selection
-Nov 11 23:54:56 server1 squid[1431]: Set Current Directory to /var/spool/squid
-Nov 11 23:54:56 server1 squid[1431]: Finished loading MIME types and icons.
-Nov 11 23:54:56 server1 squid[1431]: HTCP Disabled.
-Nov 11 23:54:56 server1 squid[1431]: Pinger socket opened on FD 14
-Nov 11 23:54:56 server1 squid[1431]: Squid plugin modules loaded: 0
-Nov 11 23:54:56 server1 squid[1431]: Adaptation support is off.
-Nov 11 23:54:56 server1 squid[1431]: Accepting HTTP Socket connections at conn3 local=[::]:3128 remote=[::] FD 12 flags=9
-Nov 11 23:54:56 server1 systemd[1]: Started Squid Web Proxy Server.
-Nov 11 23:54:57 server1 squid[1431]: storeLateRelease: released 0 objects
+Nov 12 00:23:59 server1 squid[1431]: Using Least Load store dir selection
+Nov 12 00:23:59 server1 squid[1431]: Set Current Directory to /var/spool/squid
+Nov 12 00:23:59 server1 squid[1431]: Finished loading MIME types and icons.
+Nov 12 00:23:59 server1 squid[1431]: HTCP Disabled.
+Nov 12 00:23:59 server1 squid[1431]: Pinger socket opened on FD 14
+Nov 12 00:23:59 server1 squid[1431]: Squid plugin modules loaded: 0
+Nov 12 00:23:59 server1 squid[1431]: Adaptation support is off.
+Nov 12 00:23:59 server1 squid[1431]: Accepting HTTP Socket connections at conn3 local=[::]:3128 remote=[::] FD 12 flags=9
+Nov 12 00:23:59 server1 systemd[1]: Started Squid Web Proxy Server.
+Nov 12 00:24:00 server1 squid[1431]: storeLateRelease: released 0 objects
 ------------------------
 
 ---ufw show added-------
@@ -470,57 +468,57 @@ sudo:x:27:ubuntu,dennis
 ---user home dir contents-----
   1340912      4 -rw-r--r--   1 yoda     yoda          807 Jan  6  2022 /home/yoda/.profile
   1340913      4 -rw-r--r--   1 yoda     yoda          220 Jan  6  2022 /home/yoda/.bash_logout
-  1335109      0 -rw-------   1 yoda     yoda            0 Nov 11 23:55 /home/yoda/.ssh/authorized_keys
+  1335109      0 -rw-------   1 yoda     yoda            0 Nov 12 00:24 /home/yoda/.ssh/authorized_keys
   1340914      4 -rw-r--r--   1 yoda     yoda         3771 Jan  6  2022 /home/yoda/.bashrc
   1335087      4 -rw-r--r--   1 aubrey   aubrey        807 Jan  6  2022 /home/aubrey/.profile
   1335088      4 -rw-r--r--   1 aubrey   aubrey        220 Jan  6  2022 /home/aubrey/.bash_logout
-  1331991      0 -rw-------   1 aubrey   aubrey          0 Nov 11 23:55 /home/aubrey/.ssh/authorized_keys
+  1331991      0 -rw-------   1 aubrey   aubrey          0 Nov 12 00:24 /home/aubrey/.ssh/authorized_keys
   1335089      4 -rw-r--r--   1 aubrey   aubrey       3771 Jan  6  2022 /home/aubrey/.bashrc
   1340900      4 -rw-r--r--   1 cindy    cindy         807 Jan  6  2022 /home/cindy/.profile
   1340901      4 -rw-r--r--   1 cindy    cindy         220 Jan  6  2022 /home/cindy/.bash_logout
-  1335097      0 -rw-------   1 cindy    cindy           0 Nov 11 23:55 /home/cindy/.ssh/authorized_keys
+  1335097      0 -rw-------   1 cindy    cindy           0 Nov 12 00:24 /home/cindy/.ssh/authorized_keys
   1340902      4 -rw-r--r--   1 cindy    cindy        3771 Jan  6  2022 /home/cindy/.bashrc
   1340906      4 -rw-r--r--   1 tiger    tiger         807 Jan  6  2022 /home/tiger/.profile
   1340907      4 -rw-r--r--   1 tiger    tiger         220 Jan  6  2022 /home/tiger/.bash_logout
-  1335103      0 -rw-------   1 tiger    tiger           0 Nov 11 23:55 /home/tiger/.ssh/authorized_keys
+  1335103      0 -rw-------   1 tiger    tiger           0 Nov 12 00:24 /home/tiger/.ssh/authorized_keys
   1340908      4 -rw-r--r--   1 tiger    tiger        3771 Jan  6  2022 /home/tiger/.bashrc
   1312834      4 -rw-r--r--   1 ubuntu   ubuntu        807 Jan  6  2022 /home/ubuntu/.profile
   1312832      4 -rw-r--r--   1 ubuntu   ubuntu        220 Jan  6  2022 /home/ubuntu/.bash_logout
   1312833      4 -rw-r--r--   1 ubuntu   ubuntu       3771 Jan  6  2022 /home/ubuntu/.bashrc
   1331995      4 -rw-r--r--   1 root     remoteadmin      807 Jan  6  2022 /home/remoteadmin/.profile
-  1331976      0 -rw-r--r--   1 root     root               0 Nov 11 23:54 /home/remoteadmin/.cache/motd.legal-displayed
+  1331974      0 -rw-r--r--   1 root     root               0 Nov 12 00:23 /home/remoteadmin/.cache/motd.legal-displayed
   1331996      4 -rw-r--r--   1 root     remoteadmin      220 Jan  6  2022 /home/remoteadmin/.bash_logout
-  1331977      4 -rwxr-xr-x   1 root     remoteadmin     1751 Nov 11 23:54 /home/remoteadmin/assignment2.sh
-  1331799      4 -rw-------   1 root     root              99 Nov 11 23:54 /home/remoteadmin/.ssh/authorized_keys
-  1330654      4 -rw-r--r--   1 root     remoteadmin       99 Nov 11 23:54 /home/remoteadmin/.ssh/id_ed25519.pub
+  1331977      4 -rwxr-xr-x   1 root     remoteadmin     1751 Nov 12 00:23 /home/remoteadmin/assignment2.sh
+  1331809      4 -rw-------   1 root     root              99 Nov 12 00:23 /home/remoteadmin/.ssh/authorized_keys
+  1330664      4 -rw-r--r--   1 root     remoteadmin       99 Nov 12 00:23 /home/remoteadmin/.ssh/id_ed25519.pub
   1331997      4 -rw-r--r--   1 root     remoteadmin     3771 Jan  6  2022 /home/remoteadmin/.bashrc
   1335093      4 -rw-r--r--   1 captain  captain          807 Jan  6  2022 /home/captain/.profile
   1335094      4 -rw-r--r--   1 captain  captain          220 Jan  6  2022 /home/captain/.bash_logout
-  1332019      0 -rw-------   1 captain  captain            0 Nov 11 23:55 /home/captain/.ssh/authorized_keys
+  1332019      0 -rw-------   1 captain  captain            0 Nov 12 00:24 /home/captain/.ssh/authorized_keys
   1335095      4 -rw-r--r--   1 captain  captain         3771 Jan  6  2022 /home/captain/.bashrc
   1335117      4 -rw-r--r--   1 sandy    sandy            807 Jan  6  2022 /home/sandy/.profile
   1335118      4 -rw-r--r--   1 sandy    sandy            220 Jan  6  2022 /home/sandy/.bash_logout
-  1335085      0 -rw-------   1 sandy    sandy              0 Nov 11 23:55 /home/sandy/.ssh/authorized_keys
+  1335085      0 -rw-------   1 sandy    sandy              0 Nov 12 00:24 /home/sandy/.ssh/authorized_keys
   1335119      4 -rw-r--r--   1 sandy    sandy           3771 Jan  6  2022 /home/sandy/.bashrc
   1335111      4 -rw-r--r--   1 scooter  scooter          807 Jan  6  2022 /home/scooter/.profile
   1335112      4 -rw-r--r--   1 scooter  scooter          220 Jan  6  2022 /home/scooter/.bash_logout
-  1335084      0 -rw-------   1 scooter  scooter            0 Nov 11 23:55 /home/scooter/.ssh/authorized_keys
+  1335084      0 -rw-------   1 scooter  scooter            0 Nov 12 00:24 /home/scooter/.ssh/authorized_keys
   1335113      4 -rw-r--r--   1 scooter  scooter         3771 Jan  6  2022 /home/scooter/.bashrc
   1336543      4 -rw-r--r--   1 perrier  perrier          807 Jan  6  2022 /home/perrier/.profile
   1340892      4 -rw-r--r--   1 perrier  perrier          220 Jan  6  2022 /home/perrier/.bash_logout
-  1335091      0 -rw-------   1 perrier  perrier            0 Nov 11 23:55 /home/perrier/.ssh/authorized_keys
+  1335091      0 -rw-------   1 perrier  perrier            0 Nov 12 00:24 /home/perrier/.ssh/authorized_keys
   1340894      4 -rw-r--r--   1 perrier  perrier         3771 Jan  6  2022 /home/perrier/.bashrc
   1335099      4 -rw-r--r--   1 snibbles snibbles         807 Jan  6  2022 /home/snibbles/.profile
   1335100      4 -rw-r--r--   1 snibbles snibbles         220 Jan  6  2022 /home/snibbles/.bash_logout
-  1332033      0 -rw-------   1 snibbles snibbles           0 Nov 11 23:55 /home/snibbles/.ssh/authorized_keys
+  1332033      0 -rw-------   1 snibbles snibbles           0 Nov 12 00:24 /home/snibbles/.ssh/authorized_keys
   1335101      4 -rw-r--r--   1 snibbles snibbles        3771 Jan  6  2022 /home/snibbles/.bashrc
   1335080      4 -rw-r--r--   1 dennis   dennis           807 Jan  6  2022 /home/dennis/.profile
   1335081      4 -rw-r--r--   1 dennis   dennis           220 Jan  6  2022 /home/dennis/.bash_logout
-  1330656      4 -rw-------   1 dennis   dennis            99 Nov 11 23:55 /home/dennis/.ssh/authorized_keys
+  1330658      4 -rw-------   1 dennis   dennis            99 Nov 12 00:24 /home/dennis/.ssh/authorized_keys
   1335082      4 -rw-r--r--   1 dennis   dennis          3771 Jan  6  2022 /home/dennis/.bashrc
   1335105      4 -rw-r--r--   1 brownie  brownie          807 Jan  6  2022 /home/brownie/.profile
   1335106      4 -rw-r--r--   1 brownie  brownie          220 Jan  6  2022 /home/brownie/.bash_logout
-  1335027      0 -rw-------   1 brownie  brownie            0 Nov 11 23:55 /home/brownie/.ssh/authorized_keys
+  1335027      0 -rw-------   1 brownie  brownie            0 Nov 12 00:24 /home/brownie/.ssh/authorized_keys
   1335107      4 -rw-r--r--   1 brownie  brownie         3771 Jan  6  2022 /home/brownie/.bashrc
 /home/aubrey/.ssh/authorized_keys
 -----------------------
@@ -577,375 +575,375 @@ Generating public/private rsa key pair.
 Your identification has been saved in /home/dennis/.ssh/id_rsa
 Your public key has been saved in /home/dennis/.ssh/id_rsa.pub
 The key fingerprint is:
-SHA256:66/nBcaKapTjHnS9beXaPSQqijaI+z8wKKpCBpSjMo0 dennis@server1
+SHA256:4GU/VbkF5Wn9KDlO1kVWcr+VYHY6TCa6/9sV+l7oqCg dennis@server1
 The key's randomart image is:
 +---[RSA 3072]----+
-|  .              |
-| +               |
-|oo.              |
-|E .    . .       |
-|oo  ... S + .    |
-|ooo.+. . * +. .  |
-|=. *... + o.oo   |
-|+ . *+ ...o+ ..  |
-|=o.==o..o*+ . .. |
+|           . *+=B|
+|          . B.=**|
+|      . o.  .+ **|
+|     . + ... o+o+|
+|      . S.o * oo.|
+|          .= o...|
+|           .... o|
+|      E  .  .oo o|
+|       .. ...o++ |
 +----[SHA256]-----+
 Generating public/private ed25519 key pair.
 Your identification has been saved in /home/dennis/.ssh/id_ed25519
 Your public key has been saved in /home/dennis/.ssh/id_ed25519.pub
 The key fingerprint is:
-SHA256:vTVZW1/ZbganXTNp7x6xg0TBcujM6U29SAOKh4lOU4o dennis@server1
+SHA256:dLgEkQoCPnxxZnA8C2aleRFnyXUtq5Buftsbmt7JuhI dennis@server1
 The key's randomart image is:
 +--[ED25519 256]--+
-|            o.   |
-|       .   + o. +|
-|    . + + = =.+**|
-|   E = + + =.*.XB|
-|    o . S o B.=.O|
-|     .     +.+.=o|
-|          .  . +.|
-|               .o|
-|                .|
+|o  o+O==o. ..    |
+|+ .+Oo=+ ... .   |
+| =o=.oo = . o    |
+|  o o. = o .     |
+|      . S .      |
+|       E .       |
+|      o .  .     |
+|       o .* o    |
+|        +B+*.    |
 +----[SHA256]-----+
 Generating public/private rsa key pair.
 Your identification has been saved in /home/aubrey/.ssh/id_rsa
 Your public key has been saved in /home/aubrey/.ssh/id_rsa.pub
 The key fingerprint is:
-SHA256:oy/OOrlVUGcmIMZDVWVEEjln6KC3pE96pYxdDepvEfA aubrey@server1
+SHA256:wFPbnJ9XBlgm4nwkgd8Fo2o3F/XIAQYtowhnlLu9MVA aubrey@server1
 The key's randomart image is:
 +---[RSA 3072]----+
-|   o+.oo*BO      |
-|   .o.o.+Bo      |
-|     o.= +       |
-|    . o.E        |
-|     + oS+       |
-|    . +o+..      |
-|     Xo+ .       |
-|    =oO..        |
-|    o*o+o        |
+|     .....=+B=*  |
+|    ..+.E*oBo*.= |
+|     +++.oB+o.o +|
+|      +o...o.o o |
+|       +S o + .  |
+|      ..+. o .   |
+|         +       |
+|        .        |
+|                 |
 +----[SHA256]-----+
 Generating public/private ed25519 key pair.
 Your identification has been saved in /home/aubrey/.ssh/id_ed25519
 Your public key has been saved in /home/aubrey/.ssh/id_ed25519.pub
 The key fingerprint is:
-SHA256:oWcbK8YWipqH9g2u4ldMYrIL3Y7ksCkATjb8fDhlcwE aubrey@server1
+SHA256:GGQieZLfvjTKEWYWpfstXkq3720jNDU2Hf7BEfnuVv4 aubrey@server1
 The key's randomart image is:
 +--[ED25519 256]--+
-|     E.          |
-|       .         |
-|.       o        |
-|.* o = o .       |
-|=.B.B = S        |
-|+oo*.* + +       |
-|oBo+= = o        |
-|*==.+o .         |
-|B++o .           |
+|  .o..+        .o|
+|  +.o=        .o |
+|   +.o.      o..o|
+|    *..o    = oo.|
+|   +.o. S  o o o.|
+|    ..+.  o     +|
+|   . ++o+. .   o.|
+|    oo.= ...o   +|
+|      o .ooo.. .E|
 +----[SHA256]-----+
 Generating public/private rsa key pair.
 Your identification has been saved in /home/captain/.ssh/id_rsa
 Your public key has been saved in /home/captain/.ssh/id_rsa.pub
 The key fingerprint is:
-SHA256:8figpy+QFW6ljYrV2MG4Uf3dYjhHn6491P8tFttVZvg captain@server1
+SHA256:S8fJ8YN+cTLwaW8iXDM5ODadHYf66CDh37LEk2P6feo captain@server1
 The key's randomart image is:
 +---[RSA 3072]----+
-|     +..         |
-|    o + o   .    |
-|     B B.. + o o |
-|    + O .++ = = +|
-|   o =  S .+ o =.|
-|  . +  . o    + E|
-|     .. . .  + +o|
-|      .o    . * +|
-|      .o.    . o+|
+|                 |
+|               . |
+|          o   o .|
+|         o X * o |
+|        S @ ^ o  |
+|       o O * &   |
+|        + % + +  |
+|         *.X o.  |
+|        ..++Eo   |
 +----[SHA256]-----+
 Generating public/private ed25519 key pair.
 Your identification has been saved in /home/captain/.ssh/id_ed25519
 Your public key has been saved in /home/captain/.ssh/id_ed25519.pub
 The key fingerprint is:
-SHA256:FIHf5WrhwVwneTMfYAKSBRkystevmQdU2j0tDEn5FQM captain@server1
+SHA256:uM7b5+abcnRxkp8YjLMPJnwe5480FwGS9ye1Oa5cMiE captain@server1
 The key's randomart image is:
 +--[ED25519 256]--+
-|   . o =XB+E.*o  |
-|    o =o=++ O.*. |
-|   . . =.=.O.= +.|
-|    . ..o *.+   .|
-|       .So +     |
-|        = +      |
-|       + o       |
-|        .        |
-|                 |
+|          ...    |
+|          ....  .|
+|           + o..o|
+|       .  oE*.+=.|
+|      ..S  o.B++.|
+|       .o B +oo+ |
+|      .  * B+ *  |
+|     o .. =oo*   |
+|      +..B=....  |
 +----[SHA256]-----+
 Generating public/private rsa key pair.
 Your identification has been saved in /home/snibbles/.ssh/id_rsa
 Your public key has been saved in /home/snibbles/.ssh/id_rsa.pub
 The key fingerprint is:
-SHA256:cqRpNiBcoW1CuL46lMGSnHxhu3CozUc16gNiiHqZ9Rk snibbles@server1
+SHA256:V6EARkJgvGY4R43a9FU0ecEaAyQjtHPRBPYurdzmjp8 snibbles@server1
 The key's randomart image is:
 +---[RSA 3072]----+
-| .. o.           |
-|.o *  o          |
-|*oO *o ..        |
-|BX.B+.E+         |
-|*+*B..BoS        |
-|o+*.+oo+         |
-|.... .           |
-|..               |
-|o.               |
+| o==O*B==o...    |
+| .=+.Bo +oo. .   |
+| *oo...  =. .    |
+|+ *o.o  .  .     |
+| =  . o S .      |
+|   . +   .       |
+|    o o          |
+|     + .         |
+|    .oE          |
 +----[SHA256]-----+
 Generating public/private ed25519 key pair.
 Your identification has been saved in /home/snibbles/.ssh/id_ed25519
 Your public key has been saved in /home/snibbles/.ssh/id_ed25519.pub
 The key fingerprint is:
-SHA256:ig62eiEBskWkMISRsBNbuNLH/SbNTk69BHnKL7GhkAg snibbles@server1
+SHA256:LCvs0UPoQX+ZuVgvrwUN+DT/QSRAwpXc8hn5EDSJC74 snibbles@server1
 The key's randomart image is:
 +--[ED25519 256]--+
-|XB+              |
-|BB.              |
-|B= . .   .       |
-|E.. o . o .      |
-|.o o . =S=       |
-|. o o...% o      |
-| .o....O * .     |
-| ..+  . = o      |
-|.o. .    .       |
+|     ..++*=+.    |
+|      oo= *+     |
+|    ....++ =.    |
+|   . o.+.Oo..    |
+|    o +.S o .    |
+|   o +E* + . .   |
+|    = = o o .    |
+|   . o . +       |
+|    .   ...      |
 +----[SHA256]-----+
 Generating public/private rsa key pair.
 Your identification has been saved in /home/brownie/.ssh/id_rsa
 Your public key has been saved in /home/brownie/.ssh/id_rsa.pub
 The key fingerprint is:
-SHA256:eR49AK7ZaC/Jamf9E2oZiTF79uq31bBrHgU4Gs3hZqk brownie@server1
+SHA256:3y33pZAuwpHkwRi3ULWn17wYplGkJlWrDPsmI4HpQuc brownie@server1
 The key's randomart image is:
 +---[RSA 3072]----+
-|        . .      |
-|       . = +     |
-|        o @ .    |
-|      o= B + .   |
-|      ==E.o + .  |
-|     ooo=o.. *   |
-|      ++.=..+ .  |
-|    ..o.= +..o   |
-|   ..o oo+o=o    |
+|       ...o.o    |
+|      o .. + .   |
+|       *o.+ +    |
+|     o. =* = o   |
+|  . + .oSo= + o  |
+| . +   .+o * = . |
+|  . E ..o.= * + .|
+|   .   .o+.. + o.|
+|         . .. . .|
 +----[SHA256]-----+
 Generating public/private ed25519 key pair.
 Your identification has been saved in /home/brownie/.ssh/id_ed25519
 Your public key has been saved in /home/brownie/.ssh/id_ed25519.pub
 The key fingerprint is:
-SHA256:assvUA6YI+ncpEQjThj/JwqJHUwYU/iNCtS3ixVNwk0 brownie@server1
+SHA256:05MuJpVg1ufaaIYZK2AUsm8w9Av5RWFwkDlpc8EbR3g brownie@server1
 The key's randomart image is:
 +--[ED25519 256]--+
-|=*+ ..=E         |
-|=X . +.o         |
-|*o==. o          |
-|==*+oo.          |
-|Oo=.=+o S        |
-|.= +.+..         |
-|  .  .o          |
-|     o..         |
-|      oo.        |
+|...oB*=.         |
+|.ooO+= E         |
+|+oo.+.O . .      |
+| =o o+ . = .     |
+|  =o  . S =      |
+| o .   * * .     |
+|    . = B o      |
+|     . = .       |
+|                 |
 +----[SHA256]-----+
 Generating public/private rsa key pair.
 Your identification has been saved in /home/scooter/.ssh/id_rsa
 Your public key has been saved in /home/scooter/.ssh/id_rsa.pub
 The key fingerprint is:
-SHA256:UR4eCXgurNN/EbZfi+WBA9hEvwBwt4goK3xMsHhzsrk scooter@server1
+SHA256:vuTiWI+JV0z3pjwv0EFsIh746IRw7hjv50kE8RXh2Mk scooter@server1
 The key's randomart image is:
 +---[RSA 3072]----+
-| .    .o+o*.     |
-|. o  ..o.Bo=     |
-|..=.o..oo+= .    |
-|..oO  o o.=. .   |
-|..+o o .S. +..   |
-| ...o .   o o +  |
-|  E  . .   o * o |
-|        . . o o  |
-|         .       |
+|  .  .+o .       |
+|. .o.*o.. +      |
+| +..o+Eo +       |
+|. o.o o . o      |
+| = o.  oSo o     |
+|. o..  .+ . o    |
+| .  . ..oo o     |
+|  ...=o* .=      |
+|   o=o+.+  +.    |
 +----[SHA256]-----+
 Generating public/private ed25519 key pair.
 Your identification has been saved in /home/scooter/.ssh/id_ed25519
 Your public key has been saved in /home/scooter/.ssh/id_ed25519.pub
 The key fingerprint is:
-SHA256:a1MPApe2Nk26sHuCzFH8JYaxhi+1BPYPHJTxiHCEMFA scooter@server1
+SHA256:10zDFgwx8VtJ1YRWEuy/nmT3xEYbeMwpR659tnUk0tk scooter@server1
 The key's randomart image is:
 +--[ED25519 256]--+
-|=oEoo.oo         |
-| ..oo.+o .       |
-|   ..*o== .      |
-|    . %+o=.      |
-|     *.*So+      |
-|    o o+o* o     |
-|   o +. =   .    |
-|    + .o..       |
-|      .o         |
+|          ==..+*=|
+|           +.o+o.|
+|            *oo. |
+|           = =Bo.|
+|        S . =o+XE|
+|         .   .*=+|
+|             . =@|
+|              o=O|
+|              .+.|
 +----[SHA256]-----+
 Generating public/private rsa key pair.
 Your identification has been saved in /home/sandy/.ssh/id_rsa
 Your public key has been saved in /home/sandy/.ssh/id_rsa.pub
 The key fingerprint is:
-SHA256:ISasF9WdExcPOmpp0a/Z8LjwyxywEnpZ7eCjcofhLnw sandy@server1
+SHA256:HkNfeq3aQT57c78vp9M9e9vg08Nk3FdXAGox5ASU8Jw sandy@server1
 The key's randomart image is:
 +---[RSA 3072]----+
-|      .. ..o+.   |
-|   . .  ..+o o   |
-|    + o o +.  .  |
-|   . + . * o     |
-|  . . . S o .    |
-|   . ..B = B     |
-|   ...+o= * o    |
-|    +.Eo.* o     |
-|     *o.  *.     |
+|      .oo+= .... |
+|       o.+ +    .|
+|        E + .   .|
+|       . o o .  o|
+|        S o o o +|
+|       . o + . +o|
+|        .   = =oo|
+|           o =*=O|
+|          . o.o%&|
 +----[SHA256]-----+
 Generating public/private ed25519 key pair.
 Your identification has been saved in /home/sandy/.ssh/id_ed25519
 Your public key has been saved in /home/sandy/.ssh/id_ed25519.pub
 The key fingerprint is:
-SHA256:IGDLIQiPBXD6MU7fpQMdJuF9LwfqjC9O3sPu74UPfV4 sandy@server1
+SHA256:VEf3/3CJfd7Y/fox2rCer/1+bPsrkOHNNi3gn99mNN4 sandy@server1
 The key's randomart image is:
 +--[ED25519 256]--+
-|O.* o.o          |
-|.X = = .         |
-|o B + + +        |
-| + + + * o       |
-|  o . = S o      |
-|     + . =       |
-|    o.o o o . E  |
-|   o.oo  + o .   |
-|   .o+=+o . .    |
+|          ..o .  |
+|         . . . . |
+|        .       .|
+|       .   o  o o|
+|        S o *.oo+|
+|           = * O*|
+|            +.*=O|
+|             +B.E|
+|            .**#&|
 +----[SHA256]-----+
 Generating public/private rsa key pair.
 Your identification has been saved in /home/perrier/.ssh/id_rsa
 Your public key has been saved in /home/perrier/.ssh/id_rsa.pub
 The key fingerprint is:
-SHA256:n0XRTdoYAw2bfMxTpSy91CKZ3hw5JKmT69SPzDdeVa4 perrier@server1
+SHA256:nWJ6DmpcZPlcD8Lkb5FmpSc0+F2TJ+BgU4p0PXDo8aU perrier@server1
 The key's randomart image is:
 +---[RSA 3072]----+
-|            =*+o=|
-|           ..&o@.|
-|           oX ^ +|
-|          +o B B.|
-|        S  +o + o|
-|         .oo.  ..|
-|         ooo oE .|
-|          . + +. |
-|             o.. |
+|        ..*=+. . |
+|       .o+=*+ * .|
+|       =.+.O.= + |
+|      + +.%.E    |
+|     o oS*o*     |
+|      .oo.o .    |
+|   . .o ..       |
+|    o. +         |
+|   ..   .        |
 +----[SHA256]-----+
 Generating public/private ed25519 key pair.
 Your identification has been saved in /home/perrier/.ssh/id_ed25519
 Your public key has been saved in /home/perrier/.ssh/id_ed25519.pub
 The key fingerprint is:
-SHA256:Gxjhvo+A9xEGpHcUP0SK4cRFkWXOdY9pygLOnV91gbE perrier@server1
+SHA256:vimvwbGfaoujmMAb6buYnelvRg2u+0vXuXtU5iPOC3s perrier@server1
 The key's randomart image is:
 +--[ED25519 256]--+
-|   .+oB*= . ..o. |
-|   =.=.O . . =. .|
-|  . = * =   +Eo .|
-|   . * = + o . . |
-|      B S o .    |
-|   . . o = .     |
-|  . o o . .      |
-|   . o +         |
-|      o .        |
+|                 |
+|                 |
+|                 |
+|    .       o    |
+|   . o. S  +     |
+|. . o..= .o o    |
+|.+ o. = =+ . .   |
+|+=+++ooo BE      |
+|=*XB=++*X+..     |
 +----[SHA256]-----+
 Generating public/private rsa key pair.
 Your identification has been saved in /home/cindy/.ssh/id_rsa
 Your public key has been saved in /home/cindy/.ssh/id_rsa.pub
 The key fingerprint is:
-SHA256:0pc029vBqQVGDPenfkswQ8VowMrMffvQEQOXYyzxbqc cindy@server1
+SHA256:culVsqyXcboVwSmF9GKp4uFFuuWGyfpHqeMvAlNIPDs cindy@server1
 The key's randomart image is:
 +---[RSA 3072]----+
-|          o++o*o.|
-|           +.=+O |
-|        + = +.+.=|
-|       . * B.+.= |
-|      . S + o+Ooo|
-|       . .   O=+.|
-|            o E..|
-|              .o.|
-|               . |
+| .       ....    |
+|  +       .= .   |
+| . +    . * *    |
+|  E .  o = * .   |
+|   o  = S.= o    |
+|  o  + &oo = .   |
+|   o  Bo= + .    |
+|    ..+... o     |
+|    .+o=. .      |
 +----[SHA256]-----+
 Generating public/private ed25519 key pair.
 Your identification has been saved in /home/cindy/.ssh/id_ed25519
 Your public key has been saved in /home/cindy/.ssh/id_ed25519.pub
 The key fingerprint is:
-SHA256:+oku6M/g3SEMRWCVNWPYbQ5CGCDPyztSpNZNCk5Nk7E cindy@server1
+SHA256:NGsSVCs65fS7PDRKp6qy0z9KLNgK7tkXXKVVa3vGYfY cindy@server1
 The key's randomart image is:
 +--[ED25519 256]--+
-|o.+X*==.         |
-|.++o*.ooo        |
-| o+E.o +         |
-|o+oo+   .        |
-|.o=o .  S        |
-|.. +   .         |
-|. +.o o          |
-| o.=.o + .       |
-| .o.+o+ o        |
+|      ... ..     |
+|     .   +  .    |
+|      = B  o +   |
+|     = B o. = o  |
+|    + + S  . + E |
+|.o   +.o+.  o    |
+|+.+  ..=..       |
+|=++ ..o...       |
+|+Bo=+o  o.       |
 +----[SHA256]-----+
 Generating public/private rsa key pair.
 Your identification has been saved in /home/tiger/.ssh/id_rsa
 Your public key has been saved in /home/tiger/.ssh/id_rsa.pub
 The key fingerprint is:
-SHA256:hUnLwl5WEXIqIafAElb8wR+D3iXfIBD/Wyh/RUchrbQ tiger@server1
+SHA256:VJYvgvVeHwYOmqfESCAL8/8EtJBk2rkjuvWAGaiVBtk tiger@server1
 The key's randomart image is:
 +---[RSA 3072]----+
-|.++.oo* o =o ..o.|
-|o .o O.O @   .o. |
-| .  + B./ + ..o. |
-|     + B.o...E.  |
-|      ..So . .   |
-|        o o .    |
-|         o .     |
-|          .      |
-|                 |
+|o.=.o.    o.     |
+| X.* .. .oo .    |
+|+ E o. =.+ + .   |
+|.. + .o.* + + o  |
+|+ * . ..S= o o . |
+|oB . o  . .   .  |
+|= o   .          |
+| o o             |
+|.   .            |
 +----[SHA256]-----+
 Generating public/private ed25519 key pair.
 Your identification has been saved in /home/tiger/.ssh/id_ed25519
 Your public key has been saved in /home/tiger/.ssh/id_ed25519.pub
 The key fingerprint is:
-SHA256:aJxRbXT+gUhCaCuryGcUs8YfdKXZOH9VavkUjLs49K4 tiger@server1
+SHA256:i7TisHEwdSoxscliVC+jPeJSpgAFnv8q0pJOvGW6mxw tiger@server1
 The key's randomart image is:
 +--[ED25519 256]--+
-|       o+oo . o  |
-|      o. +o+ o + |
-|     ...*.. o * .|
-|   o.o.X . . B o |
-|  . =o* S . = =  |
-|   =.o   . + o . |
-|..o.. .   . o    |
-|...o .       .   |
-|  o        E.    |
+|.o+.             |
+|oo.+.            |
+|o+*o...          |
+|o.++oo           |
+|.o*+. . S        |
+|++.+o. o .       |
+|oEooo.o .        |
+|B.O*..           |
+|oX=..            |
 +----[SHA256]-----+
 Generating public/private rsa key pair.
 Your identification has been saved in /home/yoda/.ssh/id_rsa
 Your public key has been saved in /home/yoda/.ssh/id_rsa.pub
 The key fingerprint is:
-SHA256:aX/jHhoFwykN/k7/wOKdtuRnmWhSX7Hkw1Lb6xWBosw yoda@server1
+SHA256:oM1YG4vGs/6Oz10Df35zdrLR3OAGQLNsFZQ4AELshcs yoda@server1
 The key's randomart image is:
 +---[RSA 3072]----+
-|        .        |
-|       . + .  .  |
-|        o *. . . |
-|        o+.o.  +.|
-|        SEo . =.=|
-|       . + +.. *+|
-|          =.Oo.++|
-|         ..X+**..|
-|          o=B+o. |
+|   oo.....oo+o   |
+|    o..  oo+.    |
+|   o o+   =.     |
+|   .EB = . .     |
+|    B = S   . .  |
+|   . o   o   o +.|
+|    .     + . + +|
+|   . o . . + .+.+|
+|    o+= .   ...*.|
 +----[SHA256]-----+
 Generating public/private ed25519 key pair.
 Your identification has been saved in /home/yoda/.ssh/id_ed25519
 Your public key has been saved in /home/yoda/.ssh/id_ed25519.pub
 The key fingerprint is:
-SHA256:YYh6vhRBXdGcZJC/CxujYI/qPRvHUXZwNS49R7jzLZI yoda@server1
+SHA256:i24PPMQKCf8VWHDggYjfSrxpwBZlYE7M495kJ/GGud0 yoda@server1
 The key's randomart image is:
 +--[ED25519 256]--+
-|    .. .=B+oo..  |
-|   . ....++o.o   |
-|    o . =.o +..  |
-|   . . + o..oo   |
-|  . o . S  . + . |
-|   ooo .+ . E o .|
-|   .++o. = . . . |
-|   oo+o . .      |
-| .o.+o           |
+|+=o++oo          |
+|*=oo =           |
+|++o.B .          |
+|.*+B.= .         |
+|ooB+* = S        |
+| .== * E .       |
+| .  o = .        |
+|     ..o         |
+|     ....        |
 +----[SHA256]-----+
 -------------------------------------------------------------------------------------------
 
@@ -987,17 +985,17 @@ network:
        valid_lft forever preferred_lft forever
     inet6 ::1/128 scope host 
        valid_lft forever preferred_lft forever
-82: eth0@if83: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
-    link/ether 00:16:3e:47:1a:67 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+104: eth0@if105: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 00:16:3e:f3:ee:a6 brd ff:ff:ff:ff:ff:ff link-netnsid 0
     inet 192.168.16.241/24 brd 192.168.16.255 scope global eth0
        valid_lft forever preferred_lft forever
-    inet6 fe80::216:3eff:fe47:1a67/64 scope link 
+    inet6 fe80::216:3eff:fef3:eea6/64 scope link 
        valid_lft forever preferred_lft forever
-84: eth1@if85: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
-    link/ether 00:16:3e:f8:cb:82 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+106: eth1@if107: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 00:16:3e:6b:08:a1 brd ff:ff:ff:ff:ff:ff link-netnsid 0
     inet 172.16.1.241/24 brd 172.16.1.255 scope global eth1
        valid_lft forever preferred_lft forever
-    inet6 fe80::216:3eff:fef8:cb82/64 scope link 
+    inet6 fe80::216:3eff:fe6b:8a1/64 scope link 
        valid_lft forever preferred_lft forever
 --ip r----------------
 default via 192.168.16.2 dev eth0 proto static 
@@ -1010,47 +1008,47 @@ default via 192.168.16.2 dev eth0 proto static
      Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
     Drop-In: /run/systemd/system/service.d
              └─zzz-lxc-service.conf
-     Active: active (running) since Tue 2025-11-11 23:54:59 UTC; 24s ago
+     Active: active (running) since Wed 2025-11-12 00:24:02 UTC; 23s ago
        Docs: https://httpd.apache.org/docs/2.4/
    Main PID: 2092 (apache2)
       Tasks: 55 (limit: 4545)
-     Memory: 5.6M
-        CPU: 62ms
+     Memory: 5.3M
+        CPU: 57ms
      CGroup: /system.slice/apache2.service
              ├─2092 /usr/sbin/apache2 -k start
              ├─2093 /usr/sbin/apache2 -k start
              └─2094 /usr/sbin/apache2 -k start
 
-Nov 11 23:54:59 server1 systemd[1]: Starting The Apache HTTP Server...
-Nov 11 23:54:59 server1 apachectl[2091]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 192.168.16.21. Set the 'ServerName' directive globally to suppress this message
-Nov 11 23:54:59 server1 systemd[1]: Started The Apache HTTP Server.
+Nov 12 00:24:02 server1 systemd[1]: Starting The Apache HTTP Server...
+Nov 12 00:24:02 server1 apachectl[2091]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 192.168.16.21. Set the 'ServerName' directive globally to suppress this message
+Nov 12 00:24:02 server1 systemd[1]: Started The Apache HTTP Server.
 
 ● squid.service - Squid Web Proxy Server
      Loaded: loaded (/lib/systemd/system/squid.service; enabled; vendor preset: enabled)
     Drop-In: /run/systemd/system/service.d
              └─zzz-lxc-service.conf
-     Active: active (running) since Tue 2025-11-11 23:54:56 UTC; 28s ago
+     Active: active (running) since Wed 2025-11-12 00:23:59 UTC; 26s ago
        Docs: man:squid(8)
    Main PID: 1429 (squid)
       Tasks: 4 (limit: 4545)
      Memory: 17.6M
-        CPU: 178ms
+        CPU: 177ms
      CGroup: /system.slice/squid.service
              ├─1429 /usr/sbin/squid --foreground -sYC
              ├─1431 "(squid-1)" --kid squid-1 --foreground -sYC
              ├─1432 "(logfile-daemon)" /var/log/squid/access.log
              └─1433 "(pinger)"
 
-Nov 11 23:54:56 server1 squid[1431]: Using Least Load store dir selection
-Nov 11 23:54:56 server1 squid[1431]: Set Current Directory to /var/spool/squid
-Nov 11 23:54:56 server1 squid[1431]: Finished loading MIME types and icons.
-Nov 11 23:54:56 server1 squid[1431]: HTCP Disabled.
-Nov 11 23:54:56 server1 squid[1431]: Pinger socket opened on FD 14
-Nov 11 23:54:56 server1 squid[1431]: Squid plugin modules loaded: 0
-Nov 11 23:54:56 server1 squid[1431]: Adaptation support is off.
-Nov 11 23:54:56 server1 squid[1431]: Accepting HTTP Socket connections at conn3 local=[::]:3128 remote=[::] FD 12 flags=9
-Nov 11 23:54:56 server1 systemd[1]: Started Squid Web Proxy Server.
-Nov 11 23:54:57 server1 squid[1431]: storeLateRelease: released 0 objects
+Nov 12 00:23:59 server1 squid[1431]: Using Least Load store dir selection
+Nov 12 00:23:59 server1 squid[1431]: Set Current Directory to /var/spool/squid
+Nov 12 00:23:59 server1 squid[1431]: Finished loading MIME types and icons.
+Nov 12 00:23:59 server1 squid[1431]: HTCP Disabled.
+Nov 12 00:23:59 server1 squid[1431]: Pinger socket opened on FD 14
+Nov 12 00:23:59 server1 squid[1431]: Squid plugin modules loaded: 0
+Nov 12 00:23:59 server1 squid[1431]: Adaptation support is off.
+Nov 12 00:23:59 server1 squid[1431]: Accepting HTTP Socket connections at conn3 local=[::]:3128 remote=[::] FD 12 flags=9
+Nov 12 00:23:59 server1 systemd[1]: Started Squid Web Proxy Server.
+Nov 12 00:24:00 server1 squid[1431]: storeLateRelease: released 0 objects
 ------------------------
 
 ---getents--------------------
@@ -1069,132 +1067,132 @@ sudo:x:27:ubuntu,dennis
 ---user home dir contents-----
   1340912      4 -rw-r--r--   1 yoda     yoda          807 Jan  6  2022 /home/yoda/.profile
   1340913      4 -rw-r--r--   1 yoda     yoda          220 Jan  6  2022 /home/yoda/.bash_logout
-  1340953      4 -rw-------   1 yoda     yoda          399 Nov 11 23:55 /home/yoda/.ssh/id_ed25519
-  1340951      4 -rw-------   1 yoda     yoda         2602 Nov 11 23:55 /home/yoda/.ssh/id_rsa
-  1340952      4 -rw-r--r--   1 yoda     yoda          566 Nov 11 23:55 /home/yoda/.ssh/id_rsa.pub
-  1335109      4 -rw-------   1 yoda     yoda          660 Nov 11 23:55 /home/yoda/.ssh/authorized_keys
-  1340954      4 -rw-r--r--   1 yoda     yoda           94 Nov 11 23:55 /home/yoda/.ssh/id_ed25519.pub
+  1340953      4 -rw-------   1 yoda     yoda          399 Nov 12 00:24 /home/yoda/.ssh/id_ed25519
+  1340951      4 -rw-------   1 yoda     yoda         2602 Nov 12 00:24 /home/yoda/.ssh/id_rsa
+  1340952      4 -rw-r--r--   1 yoda     yoda          566 Nov 12 00:24 /home/yoda/.ssh/id_rsa.pub
+  1335109      4 -rw-------   1 yoda     yoda          660 Nov 12 00:24 /home/yoda/.ssh/authorized_keys
+  1340954      4 -rw-r--r--   1 yoda     yoda           94 Nov 12 00:24 /home/yoda/.ssh/id_ed25519.pub
   1340914      4 -rw-r--r--   1 yoda     yoda         3771 Jan  6  2022 /home/yoda/.bashrc
   1335087      4 -rw-r--r--   1 aubrey   aubrey        807 Jan  6  2022 /home/aubrey/.profile
   1335088      4 -rw-r--r--   1 aubrey   aubrey        220 Jan  6  2022 /home/aubrey/.bash_logout
-  1340917      4 -rw-------   1 aubrey   aubrey        411 Nov 11 23:55 /home/aubrey/.ssh/id_ed25519
-  1340898      4 -rw-------   1 aubrey   aubrey       2602 Nov 11 23:55 /home/aubrey/.ssh/id_rsa
-  1340904      4 -rw-r--r--   1 aubrey   aubrey        568 Nov 11 23:55 /home/aubrey/.ssh/id_rsa.pub
-  1331991      4 -rw-------   1 aubrey   aubrey        664 Nov 11 23:55 /home/aubrey/.ssh/authorized_keys
-  1340918      4 -rw-r--r--   1 aubrey   aubrey         96 Nov 11 23:55 /home/aubrey/.ssh/id_ed25519.pub
+  1340910      4 -rw-------   1 aubrey   aubrey        411 Nov 12 00:24 /home/aubrey/.ssh/id_ed25519
+  1340898      4 -rw-------   1 aubrey   aubrey       2602 Nov 12 00:24 /home/aubrey/.ssh/id_rsa
+  1340904      4 -rw-r--r--   1 aubrey   aubrey        568 Nov 12 00:24 /home/aubrey/.ssh/id_rsa.pub
+  1331991      4 -rw-------   1 aubrey   aubrey        664 Nov 12 00:24 /home/aubrey/.ssh/authorized_keys
+  1340916      4 -rw-r--r--   1 aubrey   aubrey         96 Nov 12 00:24 /home/aubrey/.ssh/id_ed25519.pub
   1335089      4 -rw-r--r--   1 aubrey   aubrey       3771 Jan  6  2022 /home/aubrey/.bashrc
   1340900      4 -rw-r--r--   1 cindy    cindy         807 Jan  6  2022 /home/cindy/.profile
   1340901      4 -rw-r--r--   1 cindy    cindy         220 Jan  6  2022 /home/cindy/.bash_logout
-  1340945      4 -rw-------   1 cindy    cindy         399 Nov 11 23:55 /home/cindy/.ssh/id_ed25519
-  1340943      4 -rw-------   1 cindy    cindy        2602 Nov 11 23:55 /home/cindy/.ssh/id_rsa
-  1340944      4 -rw-r--r--   1 cindy    cindy         567 Nov 11 23:55 /home/cindy/.ssh/id_rsa.pub
-  1335097      4 -rw-------   1 cindy    cindy         662 Nov 11 23:55 /home/cindy/.ssh/authorized_keys
-  1340946      4 -rw-r--r--   1 cindy    cindy          95 Nov 11 23:55 /home/cindy/.ssh/id_ed25519.pub
+  1340945      4 -rw-------   1 cindy    cindy         399 Nov 12 00:24 /home/cindy/.ssh/id_ed25519
+  1340943      4 -rw-------   1 cindy    cindy        2602 Nov 12 00:24 /home/cindy/.ssh/id_rsa
+  1340944      4 -rw-r--r--   1 cindy    cindy         567 Nov 12 00:24 /home/cindy/.ssh/id_rsa.pub
+  1335097      4 -rw-------   1 cindy    cindy         662 Nov 12 00:24 /home/cindy/.ssh/authorized_keys
+  1340946      4 -rw-r--r--   1 cindy    cindy          95 Nov 12 00:24 /home/cindy/.ssh/id_ed25519.pub
   1340902      4 -rw-r--r--   1 cindy    cindy        3771 Jan  6  2022 /home/cindy/.bashrc
   1340906      4 -rw-r--r--   1 tiger    tiger         807 Jan  6  2022 /home/tiger/.profile
   1340907      4 -rw-r--r--   1 tiger    tiger         220 Jan  6  2022 /home/tiger/.bash_logout
-  1340949      4 -rw-------   1 tiger    tiger         399 Nov 11 23:55 /home/tiger/.ssh/id_ed25519
-  1340947      4 -rw-------   1 tiger    tiger        2602 Nov 11 23:55 /home/tiger/.ssh/id_rsa
-  1340948      4 -rw-r--r--   1 tiger    tiger         567 Nov 11 23:55 /home/tiger/.ssh/id_rsa.pub
-  1335103      4 -rw-------   1 tiger    tiger         662 Nov 11 23:55 /home/tiger/.ssh/authorized_keys
-  1340950      4 -rw-r--r--   1 tiger    tiger          95 Nov 11 23:55 /home/tiger/.ssh/id_ed25519.pub
+  1340949      4 -rw-------   1 tiger    tiger         399 Nov 12 00:24 /home/tiger/.ssh/id_ed25519
+  1340947      4 -rw-------   1 tiger    tiger        2602 Nov 12 00:24 /home/tiger/.ssh/id_rsa
+  1340948      4 -rw-r--r--   1 tiger    tiger         567 Nov 12 00:24 /home/tiger/.ssh/id_rsa.pub
+  1335103      4 -rw-------   1 tiger    tiger         662 Nov 12 00:24 /home/tiger/.ssh/authorized_keys
+  1340950      4 -rw-r--r--   1 tiger    tiger          95 Nov 12 00:24 /home/tiger/.ssh/id_ed25519.pub
   1340908      4 -rw-r--r--   1 tiger    tiger        3771 Jan  6  2022 /home/tiger/.bashrc
   1312834      4 -rw-r--r--   1 ubuntu   ubuntu        807 Jan  6  2022 /home/ubuntu/.profile
   1312832      4 -rw-r--r--   1 ubuntu   ubuntu        220 Jan  6  2022 /home/ubuntu/.bash_logout
   1312833      4 -rw-r--r--   1 ubuntu   ubuntu       3771 Jan  6  2022 /home/ubuntu/.bashrc
   1331995      4 -rw-r--r--   1 root     remoteadmin      807 Jan  6  2022 /home/remoteadmin/.profile
-  1331976      0 -rw-r--r--   1 root     root               0 Nov 11 23:54 /home/remoteadmin/.cache/motd.legal-displayed
+  1331974      0 -rw-r--r--   1 root     root               0 Nov 12 00:23 /home/remoteadmin/.cache/motd.legal-displayed
   1331996      4 -rw-r--r--   1 root     remoteadmin      220 Jan  6  2022 /home/remoteadmin/.bash_logout
-  1331977      4 -rwxr-xr-x   1 root     remoteadmin     1751 Nov 11 23:54 /home/remoteadmin/assignment2.sh
-  1331799      4 -rw-------   1 root     root              99 Nov 11 23:54 /home/remoteadmin/.ssh/authorized_keys
-  1330654      4 -rw-r--r--   1 root     remoteadmin       99 Nov 11 23:54 /home/remoteadmin/.ssh/id_ed25519.pub
+  1331977      4 -rwxr-xr-x   1 root     remoteadmin     1751 Nov 12 00:23 /home/remoteadmin/assignment2.sh
+  1331809      4 -rw-------   1 root     root              99 Nov 12 00:23 /home/remoteadmin/.ssh/authorized_keys
+  1330664      4 -rw-r--r--   1 root     remoteadmin       99 Nov 12 00:23 /home/remoteadmin/.ssh/id_ed25519.pub
   1331997      4 -rw-r--r--   1 root     remoteadmin     3771 Jan  6  2022 /home/remoteadmin/.bashrc
   1335093      4 -rw-r--r--   1 captain  captain          807 Jan  6  2022 /home/captain/.profile
   1335094      4 -rw-r--r--   1 captain  captain          220 Jan  6  2022 /home/captain/.bash_logout
-  1340921      4 -rw-------   1 captain  captain          411 Nov 11 23:55 /home/captain/.ssh/id_ed25519
-  1340919      4 -rw-------   1 captain  captain         2602 Nov 11 23:55 /home/captain/.ssh/id_rsa
-  1340920      4 -rw-r--r--   1 captain  captain          569 Nov 11 23:55 /home/captain/.ssh/id_rsa.pub
-  1332019      4 -rw-------   1 captain  captain          666 Nov 11 23:55 /home/captain/.ssh/authorized_keys
-  1340922      4 -rw-r--r--   1 captain  captain           97 Nov 11 23:55 /home/captain/.ssh/id_ed25519.pub
+  1340921      4 -rw-------   1 captain  captain          411 Nov 12 00:24 /home/captain/.ssh/id_ed25519
+  1340917      4 -rw-------   1 captain  captain         2602 Nov 12 00:24 /home/captain/.ssh/id_rsa
+  1340920      4 -rw-r--r--   1 captain  captain          569 Nov 12 00:24 /home/captain/.ssh/id_rsa.pub
+  1332019      4 -rw-------   1 captain  captain          666 Nov 12 00:24 /home/captain/.ssh/authorized_keys
+  1340922      4 -rw-r--r--   1 captain  captain           97 Nov 12 00:24 /home/captain/.ssh/id_ed25519.pub
   1335095      4 -rw-r--r--   1 captain  captain         3771 Jan  6  2022 /home/captain/.bashrc
   1335117      4 -rw-r--r--   1 sandy    sandy            807 Jan  6  2022 /home/sandy/.profile
   1335118      4 -rw-r--r--   1 sandy    sandy            220 Jan  6  2022 /home/sandy/.bash_logout
-  1340937      4 -rw-------   1 sandy    sandy            399 Nov 11 23:55 /home/sandy/.ssh/id_ed25519
-  1340935      4 -rw-------   1 sandy    sandy           2602 Nov 11 23:55 /home/sandy/.ssh/id_rsa
-  1340936      4 -rw-r--r--   1 sandy    sandy            567 Nov 11 23:55 /home/sandy/.ssh/id_rsa.pub
-  1335085      4 -rw-------   1 sandy    sandy            662 Nov 11 23:55 /home/sandy/.ssh/authorized_keys
-  1340938      4 -rw-r--r--   1 sandy    sandy             95 Nov 11 23:55 /home/sandy/.ssh/id_ed25519.pub
+  1340937      4 -rw-------   1 sandy    sandy            399 Nov 12 00:24 /home/sandy/.ssh/id_ed25519
+  1340935      4 -rw-------   1 sandy    sandy           2602 Nov 12 00:24 /home/sandy/.ssh/id_rsa
+  1340936      4 -rw-r--r--   1 sandy    sandy            567 Nov 12 00:24 /home/sandy/.ssh/id_rsa.pub
+  1335085      4 -rw-------   1 sandy    sandy            662 Nov 12 00:24 /home/sandy/.ssh/authorized_keys
+  1340938      4 -rw-r--r--   1 sandy    sandy             95 Nov 12 00:24 /home/sandy/.ssh/id_ed25519.pub
   1335119      4 -rw-r--r--   1 sandy    sandy           3771 Jan  6  2022 /home/sandy/.bashrc
   1335111      4 -rw-r--r--   1 scooter  scooter          807 Jan  6  2022 /home/scooter/.profile
   1335112      4 -rw-r--r--   1 scooter  scooter          220 Jan  6  2022 /home/scooter/.bash_logout
-  1340933      4 -rw-------   1 scooter  scooter          411 Nov 11 23:55 /home/scooter/.ssh/id_ed25519
-  1340931      4 -rw-------   1 scooter  scooter         2602 Nov 11 23:55 /home/scooter/.ssh/id_rsa
-  1340932      4 -rw-r--r--   1 scooter  scooter          569 Nov 11 23:55 /home/scooter/.ssh/id_rsa.pub
-  1335084      4 -rw-------   1 scooter  scooter          666 Nov 11 23:55 /home/scooter/.ssh/authorized_keys
-  1340934      4 -rw-r--r--   1 scooter  scooter           97 Nov 11 23:55 /home/scooter/.ssh/id_ed25519.pub
+  1340933      4 -rw-------   1 scooter  scooter          411 Nov 12 00:24 /home/scooter/.ssh/id_ed25519
+  1340931      4 -rw-------   1 scooter  scooter         2602 Nov 12 00:24 /home/scooter/.ssh/id_rsa
+  1340932      4 -rw-r--r--   1 scooter  scooter          569 Nov 12 00:24 /home/scooter/.ssh/id_rsa.pub
+  1335084      4 -rw-------   1 scooter  scooter          666 Nov 12 00:24 /home/scooter/.ssh/authorized_keys
+  1340934      4 -rw-r--r--   1 scooter  scooter           97 Nov 12 00:24 /home/scooter/.ssh/id_ed25519.pub
   1335113      4 -rw-r--r--   1 scooter  scooter         3771 Jan  6  2022 /home/scooter/.bashrc
   1336543      4 -rw-r--r--   1 perrier  perrier          807 Jan  6  2022 /home/perrier/.profile
   1340892      4 -rw-r--r--   1 perrier  perrier          220 Jan  6  2022 /home/perrier/.bash_logout
-  1340941      4 -rw-------   1 perrier  perrier          411 Nov 11 23:55 /home/perrier/.ssh/id_ed25519
-  1340939      4 -rw-------   1 perrier  perrier         2602 Nov 11 23:55 /home/perrier/.ssh/id_rsa
-  1340940      4 -rw-r--r--   1 perrier  perrier          569 Nov 11 23:55 /home/perrier/.ssh/id_rsa.pub
-  1335091      4 -rw-------   1 perrier  perrier          666 Nov 11 23:55 /home/perrier/.ssh/authorized_keys
-  1340942      4 -rw-r--r--   1 perrier  perrier           97 Nov 11 23:55 /home/perrier/.ssh/id_ed25519.pub
+  1340941      4 -rw-------   1 perrier  perrier          411 Nov 12 00:24 /home/perrier/.ssh/id_ed25519
+  1340939      4 -rw-------   1 perrier  perrier         2602 Nov 12 00:24 /home/perrier/.ssh/id_rsa
+  1340940      4 -rw-r--r--   1 perrier  perrier          569 Nov 12 00:24 /home/perrier/.ssh/id_rsa.pub
+  1335091      4 -rw-------   1 perrier  perrier          666 Nov 12 00:24 /home/perrier/.ssh/authorized_keys
+  1340942      4 -rw-r--r--   1 perrier  perrier           97 Nov 12 00:24 /home/perrier/.ssh/id_ed25519.pub
   1340894      4 -rw-r--r--   1 perrier  perrier         3771 Jan  6  2022 /home/perrier/.bashrc
   1335099      4 -rw-r--r--   1 snibbles snibbles         807 Jan  6  2022 /home/snibbles/.profile
   1335100      4 -rw-r--r--   1 snibbles snibbles         220 Jan  6  2022 /home/snibbles/.bash_logout
-  1340925      4 -rw-------   1 snibbles snibbles         411 Nov 11 23:55 /home/snibbles/.ssh/id_ed25519
-  1340923      4 -rw-------   1 snibbles snibbles        2602 Nov 11 23:55 /home/snibbles/.ssh/id_rsa
-  1340924      4 -rw-r--r--   1 snibbles snibbles         570 Nov 11 23:55 /home/snibbles/.ssh/id_rsa.pub
-  1332033      4 -rw-------   1 snibbles snibbles         668 Nov 11 23:55 /home/snibbles/.ssh/authorized_keys
-  1340926      4 -rw-r--r--   1 snibbles snibbles          98 Nov 11 23:55 /home/snibbles/.ssh/id_ed25519.pub
+  1340925      4 -rw-------   1 snibbles snibbles         411 Nov 12 00:24 /home/snibbles/.ssh/id_ed25519
+  1340923      4 -rw-------   1 snibbles snibbles        2602 Nov 12 00:24 /home/snibbles/.ssh/id_rsa
+  1340924      4 -rw-r--r--   1 snibbles snibbles         570 Nov 12 00:24 /home/snibbles/.ssh/id_rsa.pub
+  1332033      4 -rw-------   1 snibbles snibbles         668 Nov 12 00:24 /home/snibbles/.ssh/authorized_keys
+  1340926      4 -rw-r--r--   1 snibbles snibbles          98 Nov 12 00:24 /home/snibbles/.ssh/id_ed25519.pub
   1335101      4 -rw-r--r--   1 snibbles snibbles        3771 Jan  6  2022 /home/snibbles/.bashrc
   1335080      4 -rw-r--r--   1 dennis   dennis           807 Jan  6  2022 /home/dennis/.profile
   1335081      4 -rw-r--r--   1 dennis   dennis           220 Jan  6  2022 /home/dennis/.bash_logout
-  1335048      4 -rw-------   1 dennis   dennis           411 Nov 11 23:55 /home/dennis/.ssh/id_ed25519
-  1331978      4 -rw-------   1 dennis   dennis          2602 Nov 11 23:55 /home/dennis/.ssh/id_rsa
-  1335047      4 -rw-r--r--   1 dennis   dennis           568 Nov 11 23:55 /home/dennis/.ssh/id_rsa.pub
-  1330656      4 -rw-------   1 dennis   dennis           763 Nov 11 23:55 /home/dennis/.ssh/authorized_keys
-  1335121      4 -rw-r--r--   1 dennis   dennis            96 Nov 11 23:55 /home/dennis/.ssh/id_ed25519.pub
+  1335043      4 -rw-------   1 dennis   dennis           411 Nov 12 00:24 /home/dennis/.ssh/id_ed25519
+  1331978      4 -rw-------   1 dennis   dennis          2602 Nov 12 00:24 /home/dennis/.ssh/id_rsa
+  1335042      4 -rw-r--r--   1 dennis   dennis           568 Nov 12 00:24 /home/dennis/.ssh/id_rsa.pub
+  1330658      4 -rw-------   1 dennis   dennis           763 Nov 12 00:24 /home/dennis/.ssh/authorized_keys
+  1335121      4 -rw-r--r--   1 dennis   dennis            96 Nov 12 00:24 /home/dennis/.ssh/id_ed25519.pub
   1335082      4 -rw-r--r--   1 dennis   dennis          3771 Jan  6  2022 /home/dennis/.bashrc
   1335105      4 -rw-r--r--   1 brownie  brownie          807 Jan  6  2022 /home/brownie/.profile
   1335106      4 -rw-r--r--   1 brownie  brownie          220 Jan  6  2022 /home/brownie/.bash_logout
-  1340929      4 -rw-------   1 brownie  brownie          411 Nov 11 23:55 /home/brownie/.ssh/id_ed25519
-  1340927      4 -rw-------   1 brownie  brownie         2602 Nov 11 23:55 /home/brownie/.ssh/id_rsa
-  1340928      4 -rw-r--r--   1 brownie  brownie          569 Nov 11 23:55 /home/brownie/.ssh/id_rsa.pub
-  1335027      4 -rw-------   1 brownie  brownie          666 Nov 11 23:55 /home/brownie/.ssh/authorized_keys
-  1340930      4 -rw-r--r--   1 brownie  brownie           97 Nov 11 23:55 /home/brownie/.ssh/id_ed25519.pub
+  1340929      4 -rw-------   1 brownie  brownie          411 Nov 12 00:24 /home/brownie/.ssh/id_ed25519
+  1340927      4 -rw-------   1 brownie  brownie         2602 Nov 12 00:24 /home/brownie/.ssh/id_rsa
+  1340928      4 -rw-r--r--   1 brownie  brownie          569 Nov 12 00:24 /home/brownie/.ssh/id_rsa.pub
+  1335027      4 -rw-------   1 brownie  brownie          666 Nov 12 00:24 /home/brownie/.ssh/authorized_keys
+  1340930      4 -rw-r--r--   1 brownie  brownie           97 Nov 12 00:24 /home/brownie/.ssh/id_ed25519.pub
   1335107      4 -rw-r--r--   1 brownie  brownie         3771 Jan  6  2022 /home/brownie/.bashrc
 /home/aubrey/.ssh/authorized_keys
 -----------------------
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDGhm6huGSFqNabqB4ZjPhtUz3IQ/KM8xnrJUSslM0zumRarFukH6apWv1LVsRTp8GtCILq5FkKvddWMuf45LmO2bTy9No55mMQs1Swsx7DmJ/pwzhiMxmrTQzkhYnp52nGEzx28tsBmV/WcdRDZ0nhizuuA+pujAP3lnZIqEFmioyRfk32YWWtI584eGgrGlMBRebBhRz6W/LWnpFRjjbvDDA+Rjl3T/QypkRjmJ07l+0U5HbjttsXNpNdwiNu3HijR1ZuRyBesdmELSNWk9wAzekDx7Fk0u1Uj4l5ifzt6qqkapqVhVXK0+1mR99Xvya0eUojAwKly5iss3KVlhPxtk0pM7Pqj4gfwzUd+9IzJtd7n3/92jigiwY5RQGOqsKOafaoYFpBeF5AYG/12IPgOyYwgLhpY+XrytkOuhk+GmHSG5+HbClfh3H53oEyzjdo+vLexDQJEudra0gU0vUy2vXYW9mDb/NRzGHeW3kBBu5IKwHr23YwdkpbRZdsJHM= aubrey@server1
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA+gzl8HKNIF4/uHv6KHGDuGR63CcXRdWP9vQ07axXbP aubrey@server1
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDwikUXqz3/9Ap6l0vwFwoD2AjAZPwYGCpxID0IfT6lqbO3MMSDO9wVnJLrQCrQcljPR4FwxP/BFpap35mlsykC50PZe/iCOK/+X+gUaSH0ae6YPwt9sn3qLJC3LpRIoJUUDfKF+0xnqI/+vhk+4YoiubMfoRCJI2NhSrQifZz9urM+Xesd9h9EOYiiyPKs0Fbq1MJVPoPssdGzl/bEEErqMk/uPqaWzVbINWCyVu7ggnC9boT9QsmdX7KwZCctCvsn1dnwWzngNG5CfPrFte8mLbEED87Uc6WahiICu1uvXrc5r6r2tIDLSCVDPnEtcZkfYwowTpx/NG1tkvPeYQ3qhMrHrbFC37q+jvdPSuvYYqfTJaWcnWGkMnPCqq8GySh8iIUuwVqSaEIVxKxpC6KdK9yld1otM+gxBDCEbVpi3gejw9DHGcNjzvOSu5pUBe9hgeHXoKnatJ39CsSCcAeqvu8PCyxmCe4S0faeiHFpO3MGpdh3uuvNx7V8W27rdNk= aubrey@server1
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHqRq2LZSUiFADUT7EVbWMMh0xz7lFlnTRShEqlAfW3c aubrey@server1
 -------------
 /home/brownie/.ssh/authorized_keys
 -----------------------
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDYPBd6hIKgUO74uW2A8Oyj4EUAwRsojFK+/VIl9JkeAiHEhL7w5RgP/qydzX3AxZ3PzjAaQptshBtBQ0KQfBtPnWcjGl+2O4PIRa456dxqLj5U5thmn7K22KuSSrxxgrzvsZMcbMCrB1Tq+xBlDsmMSGbrrqZ4gFsj73AGFUNYyV5jHTfbqSxCYVWWNvVzXnMJ0rnpf/bjwGqbZ1s8CXPm889KBvxZGqwWWdyFnZ9LOGs02eQ1HgnJXtVzfwlUcCJ3omvcR7T0Qp1NnJl8M+suTVKiYBKUycSzyY8Lxshyoqi5vuFLFi2qNS++X3yj6RuKsqtlL/aTx/V+nL1gD8dI12QMUygXu8K6pmZ0CcI6pTKXPdNzNPSrbBYxMkjQRtNNPa0jWdipxNX6gpzAVGXEMLiyR5l7D5bsnwZIfrD3pRvjUwNRFxRt7mdQUOZwDkNCZ5aT9T6HNNZVWOruTkoGdf9rnHHaK5FhZJaZk90QpC2ajXUh1LU5+TOU1tcpUR0= brownie@server1
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFjUISXEg0Xd/Q7OvRnNXuLd3KlX/3wiibxaUA0EUvxD brownie@server1
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDHSFUL+LEUtg9EsInbV2zZ/suf/q2j3t8rOxxcAFlQbkaNKkPFvZyeLAv5whdbAN3SufxvFo+VywZV/numKUzSJF0XkOmS/IVqz1yH60VPE/dPzjzWVlxrdyFtDsVCY4AhiAWw11vfRmJYX/tvnQPE18ZIGOJ3esIpOY7WfI8FP6/Lu1z+t4TL+Sm0cLAeNlviYCM3jbJijBx99R5xTOAeIL/KG4zxjIYud+KlNjVXmFpaKXiBTbrGNdUs6kMfyVIqf5BeHh12+CEBIeOuvj7vxZnSLL2DEvGFmG1uDYDbXV9iOh5eyD1k39MCIdP6vcifZVv4v1UmqI6XVYdLNI0P6C2DafTIAIVz5ypDBMkt+Mupn6OV4eGgc74FRfMJ4O5yDMkc/cFWo2h3Ryd6uHx4L644+YFzOez/gE4zjPP503daHXhMESLmeuJkqH7jwnFWXMKkAbynX8VyS2pDYfIUFHZyihz4irBefb1QJyaOXFC1BEvEN6Oqj0qzjVv+/xM= brownie@server1
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGLWsZ/ig5tSEwkE8UbNUrSYA9d1OWuir44cVN2QVVnb brownie@server1
 -------------
 /home/captain/.ssh/authorized_keys
 -----------------------
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC2YnMUNOCw9LCWPI3O4WSnUkgY23DsyQP/+WQHpeWpn4lu6W5daQTDqoEpExe3lQKhLpiyX//rOiFYVrqljlQbLjwohq6dW38XBcROWakG9hGULRzqdf0KiOq3I5/+hi72envFbkis/XlFSUXy4346EB4qVkw4smkRDCg2reGnNJS+VXK9W885dp/KMzSCBfrmBTiy10SAJCT8sPMtJz+ciT9YoGewLg5lCsP/scTlN2O8ZJe5y9FqfBYFzbLa5n0/XJQ1YQ8nWiVeCa2maohtDbWiVUt4fl9q8lYVqpnK1LA/sXrrdKF9A5p1znWjVdvejz8PLGzIvzqsGKMhg2d8XaHKHjyV26XZcCBVyd7fb903ATfWV/3GDphAlu5ZxyG9tZFc22rOx5P9D2HNkGI6WGVnpF6JULav62dOczCvYpt07kV3e6wHzILCg4rzxkXZEFEogzcuKOevVo62fPegXY2rIxpaWhqaWA++zZjQIze8sWtTU410gsaRFjsf2us= captain@server1
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFFLEfh3bhYDhe0kCIGh1pi1wZLTBiBZaW+zKmbOyRje captain@server1
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDKbrc0cgl2dMnJdvzAdKe1xwlYLU5Eu5xHxcTGnds+v3Ecsf/6y2pp2tJb3mPDow0XNlrX0GnWfAoZf4QAkGGeA/STfFzD0oT1F2oDYyJePh31bubnH65SlCBiLjTefPZdeK3MtjDFI8gO4Q8OHfrz0VJqVjZn/6Z94KuXIRLGQLZnOTlyKAFZFe6z4D4Ufpc5+6rOj/6mCyVwE7k1HEwlsd1K/kE2M3AYOvfHpRK4dAKpF3YDvyO6E5a+WGUJFEmA1L9oiKbczUY7yzYWeGD/yvv11Twb5RRkrZ/pba023R8CHEDYEr+eCzgscFjTkwIv+IhCO2qrx/FRJQFjqGxt43H3BILhjwOlJh7N5Jk/aDJPVlrOLvI3Hmrw4agR4C66pXGNWTnAH72l5BtBHiUivJgHkkZC2PN8K9nRfb2a5RUd50Uap3MXyO+RnyyBOAomWiBPaXYRzPXP9N2yPdC2sx4OrCirkvms+CRY2LiuZAZ+zMtZMhR7qhbQ4nYDSZk= captain@server1
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPR0QES+symIUidtweZkwN9mEuGXmDj7mjE+MSF7J5g6 captain@server1
 -------------
 /home/cindy/.ssh/authorized_keys
 -----------------------
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCX9EnknapFLD/08LTRxW7Fy6pRKx81SP3YYvAkH9cpd2qyP+qnYCUdB5jDeUQ/75HQYaRnJzxVApxOEGcyCZG4jkhp5q2YhvCbP1m5xAQpX1x+LohsTNqbrnZ7CIFeIs/4EtZBPTTPJVdhPKVpcjgK2xx/PFAjUnF6hEaQvI/cbs+qObRsaRGRaYd8aBrj8Foi+jnPAo7jkQJIWUrg324we14hlnyLORU9wTbSX7gPo7YrJxrncuoG68xuTrOEZM2poHP5hZ68lWbmkvwRTspUyC9OWUcxTOiMhVDWiowqyLRDUL+VWVSo0pA7HKTq9oTRxyRfXicS5XOuxBcDg8odaopfwXSN6sz44hZ2IXy93+tn6tdpcgQ8SZxPDJTqygg8196KRydMvqLSFRh4zr7p199yrHqVYPXKHx/b4PMGZyepSnQjjIo9MA/foToITVf9G2+IAV5U+G0Xe4LOa1pEbWWWBUV2+e9hH8ySSWikoXFwKWUGkY+wlLAVDnIxrZ0= cindy@server1
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINQShYr5vEZ40+c1w8JR0TzQrpDrd24nVCWf3mNp1/sA cindy@server1
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCriCpDpytZwYzJ+Ae/AHwXtFVh34BkgZjakZAQwJeGFtWJf++p9b5w/eO7Kv2SOIR+mWG6XL8kyPGNX+65mFzJCLsT/xPrLkLzIkSytCrwI9Ojx/3YoqPjCoS+1nQgG18ptznxlbTxQfce27FYD74Ng2yC1eRH+UumKgbo/Ae1Sh7JX2DgoGvMbdgAdnxvon5y/IsowMDjxjDbNF4rF/m3rohtBljGkoxwqzJcNWeK08KQHB7sAUiuChJAWTNgbZBjGG0gdgB1C4fc5vf5I1mzw8z42ipdICShg4JH+IECymFBd6E3IeUHW1R+dtb8P90mAHbZzV2kCgz+7Guf9znHsAWiBAFsGmFO8BkK1c5aN+so1Bklwh9H4zdci0A7qJKgHISbaJX+QvZWVhbmNP3e1aGvdVydpDb0YmLIfcnkNTS1T7q5s9z+oV5l/QmTnl5orK+tUU6ow6SXkwKntGEwNfgR5AvsOzecTGBwvzFmx7q7Su8zqPtz0ln4MieQD+U= cindy@server1
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFkWAtM7J4eq6b5AJxl3w2v6jt2u+mSxCpE/mzZ4Jbym cindy@server1
 -------------
 /home/dennis/.ssh/authorized_keys
 -----------------------
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG4rT3vTt99Ox5kndS4HmgTrKBT8SKzhK4rhGkEVGlCI curtis@generic-vm
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDotWEbG7Gee6X9K+6KFOF1b/7taYyY1f/5S7mzW+OEQ500RLOdMjLINJOG/AAWSQXrwVrK3Ul1Zc4pINqHR/ghXRSibdEbJnfuIELSZhhWkKskhdgG0lQ4mm9LVP/Y8io+pAIy3MtFPyqtPYnKQLKYdHY4x1XQkYcs3iJd/uczVns09oBytOM8W7gKBMITfLgFsyvFTBxwWG12FBq82rofDJ4QbGkyg3OZh/aZoH6Icj+uLdeMU5nW5PLKVzqB4lUs4KGvP+0aVotsdMTe3499wnX3ds0CNk4wSpTuZoGJUbBxseksoGZmuw+rqm+pFTHTscJOvVO12Y+/b5/xlcAFb81vZF8oB91TfDCZClpItOHxM4gTSBJotwxoRigLo+VEbaYPSmPC8aScRuDk48kppEbHUCj0avCJNNuxxKT5Kit9KGbZhkjYRzfCQSK6YlHBfWf+vyRGJe771HvPjfB5j40AqYNNZCTBE7XICYXrY88jHoAzp9vxYw8xEfL+n4U= dennis@server1
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINcMHKIWa/4PdA9DSJez8XRzqHL3C6/SO3gFXUHYho+3 dennis@server1
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCsg3lYsl8FOuNYIigPoUx41AIn7xluFLttos+IGREA/dt6OBzurvVUcN6YEQ02Fta/srNEiHB3TnRuoXGpVNAMgQnA1GBPNXp/EbbAwh11uzNpyae1CaSdvBWQTwq7OXnRHpJwJxDbgYUV+SUs4kVfYolQ07SN6FgD1SpgphOYhVBG8ptRVNq7YfseTKYCqpTFpdgoaeDlX2uRUCHSQz0a57c5KfLFITQQ0xMctnEiMVmCwHpYx05hUoqEIr9SvAAkbj9wSFASPBmbEV/W8W6d5pHC84zw18kgW0Fj1be9toBBIFW2v1SjiLgWT4Ns5Ls9RacqbB5OTspniMKcZ1x5orjpp01XpeQOaukYWfGDQsbFDC7jNrmhl2rgXA2I7AtvY7q5dhAKCy47CxG5a0ZAVFIPGMs+s/e0N/lQ6YaOHa62LB+AxnNynZzuTE8RH7R+Le5/Kj+IAfJQWw32praULCz9jSqvqyU5P7ew+9jtt+jHALmaK4uXJRSlXckbZ6U= dennis@server1
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJKw22Reh+7r3OO5owMqKsPi4v3h54jQePwHj/Soclhx dennis@server1
 -------------
 /home/perrier/.ssh/authorized_keys
 -----------------------
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCzsYysr55xe0YGKEEAPHn5H/KxUy5/N7X9R1u1LDFomd/y5ztAlhKV5Unf7NQNX9w1k0FegOw7VLqB9NUb2lCRtdSTGW1MBo887Lawr8EpIN/ugDAd18LI9YwzNhnRfXvdC5BxitpMNNwDKXZya7plVJ/wjVp3ggnYdlgMtsXUCoqEtUt7KwEerS7HOByBxxx8bAvPwq3l+XtcujTLfyMBwMeksC3dUmZXCHF9XV8E4Vy60NaCSe42Mf1RrN8fsEulShkeXESEQME5qVURcDv8/DEQSfcuzwO/7/CrIJbbxr8eerZDWf5YU1g7jtucqNb5z3TBRRVKTUJZVTOZtcQxWN3G/hPYzJUplR+/aRn9Wgyp1YEo+3C5zJE7Y6ycqiT+d3r/pZneeNYpCg1X4m705PFTBGLavqRUIor4SATfadS5RI4j/00VNWlLEmRKJFW78OCt+JaIgQPSsD/6g7QxhD/V3s64LeoiqaBc8d+DtR0qdTqeaZ1DhzObBHKsPdE= perrier@server1
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMxp4tSyPynE1bOx5bHGLxK/op8vPw7He5WFv5bxvq/I perrier@server1
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDFabYLTIzGqCIWiZBhLAEPAgY8r6dK9FXs2ll6kt4HScni2A8MCWSCZI+/NZZdLMACCxyRJRiu2xwapHrVS3u4IubJWcRvT0OtvvZNS4S4DruGimhpkv3LngP+8K00+gL+yR3Y+S2w9JivxI+8ccgMi/2D8GJkFDO+0mOyoeevZsKnodNyUCkhDJ2op2yS2VRLjVFNRnCDjBEOfHfiPy78RENXOMPVnnqFk2V3XH4cD3v+aKh1qE0YpMlNrM4mes4yJYC8EUouvAaEx3s+n/MoFLbSpEzjVURUEq6YRvnG/s+LEL/3ZsPnSbXeZVcmY4C3vHLBwIA30maXfVyeh1YO/F2ZzbGUuryKsHYVDq0/XXAu4VokVaJAhVrkrT5YSrSGMVYRfyY2KZgUkVxXjoFPB5d1SnwU0XskU9tclgjTLKIX763vzZQ3KeGyjx4jYynj++Al4VEHkVgyR35XE1ejsIbA7U2RgYNjyxLqiaU/EbiZ1kM4eozz+GVoXd83PSU= perrier@server1
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE+lu+d35XULfM+Qv6p/cLQy0k4wplQC8upMUaH4ubBr perrier@server1
 -------------
 /home/remoteadmin/.ssh/authorized_keys
 -----------------------
@@ -1202,28 +1200,28 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOSEGGc8U5tdIrV3QMUK1PIcxqKip6/QdIRiBF5T7cta
 -------------
 /home/sandy/.ssh/authorized_keys
 -----------------------
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCqThUC1UEqwtSDVSA2LtXuDnyhQcbWWFO44n1F/L4Uk1rJh4BVpthpBjFDWehtw7Z5BEYbeiVtKkweAutK0jtI3cQH/mY96UAESGLUBazC8srBJc4OQUgGjwQCDICRb7yu9rEfMdmq7yU1w1PU5IbX/+9lGO2XsxjCXhznUYLv+qtmC0m6dnQISaESRsyDpFqWnXLTf3gT3pXVtNKrwnYE2x5MDSfSI8ouLtbQ0Vt7aBjjRKq/c/ipu3LblUkydTBo6V0eD2u9P0qcFnfSwzTwaDKBrvYrX3KLOf715oXGWfsqIPHCCTJhBMeawhXAAnKRdLa9qWMAppCBoAmdwPOQceTRja72jPVafyYDMuHC/pr5ggo4MYZr/ieBjvP+k/uLqBEgRhq8Y+Y28y3LL1GcP5rFq6a+cgLmFXICUbigBnAiafKD3lCnsEiJRu8qs+EuS71tEtXSF02ZBvk7nIqCD4Ro+Wt0NVriuwshzyFSKYtzgBq8rCG/pIEbOvm6PeE= sandy@server1
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGeCiFB5Fr6CyUKJ+mj/sBvP3RASFSnwADBnqch/QAA2 sandy@server1
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDGYf6FWf3oWpOXZWtmVIXSRY0P+5/EwVDX0YVAkrZ6LRLskqfIuWfp3WYVUAxmMxHtWyJugWO840eUWmQDU6w23yQ+49kg2XO9pfkUwlAGA8OshcVHoy3REMERb0U3sM8qtZhMY8WLk94mALd95ZgJIv2UxLMw8DLeRn7YWs19KbGA0+Qdq/75ZVC6HCiajqNU3cvEl4jY0vyqqfpw0bTvQ5ZmLNP8Gb26/4pa4pFsSImnIhlnZEHZBz9V3Glzona2SXVBwNzRyXoie2P6k9+CYTVdk9bDUS6z5s0O2Aj/vVO4hiuKUZKN40JDIAF4kUwpQs2fMII7n+OjMRR3SP/0srGdRBwsS/k4p6FjEZ0KyTJQI04KfDvWy1t74539LcuEvUnc9yBrhf3i+UTxHU1kZpzE3RkBs9ftMBB/4AL7uy34GZzBiLEc3MYd7XCM0FgeHBmg2J6ghh5SFFZCBPXGahRRXp7xYXTxfwTIRnOfw7qCZfZKNc/79H9U7ZtvB4c= sandy@server1
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBhfEgUTya2VRNqEE+pvoXtG2m34g84fxk1mdqZy4JAX sandy@server1
 -------------
 /home/scooter/.ssh/authorized_keys
 -----------------------
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCzhwpi8zjXeHyEOFCJeBpoxjBvznTqk5NfxB+T5Yz1181ct/MqlMBcsyllr3FEe8mn7fba+AtU1ZOvgIYEG5kzHDWwdUPNLpUjkSDXBKmr0uT4kPEI53/JRsiLZiK+upg0DJ+luiSnPGiMtybA9Yvv5YZsh+/9DOU1xiuU4QAC05bbnLfkc/vQURpuj+VJ1FmimC6x02EyuVq22+x/DiCcpbeZXFoUswDHKPns5WFbuBoST0T7q161aYecebXhk0IvbtKzBosT6eUFB0b1GT1fCMoq2tOL4EmVVtcC+cMhiA1RLO53Jz1nJxwbheJ2tRGIpmZ5MVg7rPb1N/eBkE64hpMQC3YT0T5RgAkKaLnw8TNwldINh6gAHh42KVlXFvFUdTItAXfBTIrm2KaXNPTEMTeMUFDvjNo/eUa0lJbhFU2d49fQDHL7ZVRcBq+vMMVwl/ViLmZDXVJSasUOCqF1QLFQlJjIsKRtIPn/LcOj+/0fAMLLtjpZPHO+9uYqHZE= scooter@server1
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMyyYYHx5xl75ASd/ob9iqYF/V4qygNElOBz+9e/8gXz scooter@server1
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDI5/o5rtcdsOLoNbF7v9sk6+zwtSwTA90B4dQkDKU70GPWMtvmHNYAYjNtdbB//bglCKVpLnnOhcizo5PcbmRQVV4OY+EVTk74iAJeun5MPo7CoKU20dbKMgcXTyhcCazdhXuuykWdiNWQqBDrQnOrCuMQSqGllbdexZxFB8unl33Y65lPg1EUVuHDx/l26Q6qX/fgsJP45d2cwe4VWJWYTZRl3TnS6N4vcwX44RfiwUV/EMxE9QPwFONhP8PEgNFEZL6yAd21ydSlZuBNxEINYISAfcMo3/QraCNlCGoTpyhJ1hadeWPFJr9HOK9Hfmt/mx41y0+0/fuVgSb/w00F1uzEEtLZnV3rdHAPAyklhTp3tipPw0rzRJ4ugZJzrPVO2WoFd2y8HJARO2x6pHl+j/2JrZNxAo5jIyyEUtRViM+QXmrd4dEbtAZ0Ewzh39WeFzJf8nskg8iSqOUEuKDcaHKdWCpQxUklAHOrDfkA+mDYldvirwtgcWfrDcvHXZc= scooter@server1
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEp7sJPAcUUudxx1qQL8dYnta9sRPW/eptJtO/evP2fX scooter@server1
 -------------
 /home/snibbles/.ssh/authorized_keys
 -----------------------
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCvjJXopNc730XarweGj+7/frGrcwG/JZ5DmLKGWuESAHtrTTMe1G6iZgRTZjqUJyu54hXlZf7OCpxG38GbBBfu5Mh5a+IdSOU6u3+oi5P2NUHX6v/bKlU47rPxzgvhDLZcHx1BBm20QqkZ1HaN166Dkx6eGhH48hkNe6OfPRJ1kZiZWzlftHUyqEGRfT2mXLq7s86XUF8rtuFUR82LJ4IeQIz47kuBjkRbxCv2pLwjEPuLjw58E66ZAxkXih0W0H/6N/ZVtN2LVMcXEdytD6x5eJpsVkJifzFY0zFnR4SDH3yJStFfy1PfGkJ5up0Fbtm2Kk1aJuLjIT6uoDzTYL2ePNTpfSuyPA5N94D9x+R0HMvVQz6dOpf+9PO0GNqamSsaA2mCuJfF7Tdbw5olqjfnwOb/tNWkxfAypWdqxUBwoUWYwqJzEuCcbuu0RA5EuhPpmf1C4Wr+ymrAtphOG9aMtFVk+SSj2W7wQdMgY7e2DkYuEyv2eufJtheogsm/PFc= snibbles@server1
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJfKwV6zbi3QcJAUV6zaw5FG6lykjzow096BaEj/LmVO snibbles@server1
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQChDce0xkFBExZtTDQq+DWR+i6sgSVzL3tWNvG2kWRlUsno4nio+CnLpwdGlHUFlv38/yJj40pqPaKwSUkg0kI8ttk/aO02EwvvujDmBsWtC3Eaj8hTeljGz0s2/P6eTZPBAir3QxAwsrTSHhgv3S505Y5mhOw4LB3ivBpp4KepOS9UgKp8w5e2SGmSOU+ibMQWzRQWMiXXlDFgozozFkd8EMck1QabSJba6Ydqqb/i5lMiXAH9WGN0M8+aklbJacFV5y4SXpZL/9weVxAoFcfgXfLwQadNbCtVuJo4TqN8TeAz17xpG//Mek4c9OiZA2OCavGDrkZ0NlALiYCwLK/oE6WO7mhGbe86IRgljXvrYN/tLiAITcxNLzTs+cmlnI960bBeH3X0ksKeS2IHEgOECwifg7+7VjD1Y5oz/REi5NQSfLVazBBNgZRObTO3mj0ZmnKg43F0/Cf8Vm0JxGMoQnGQLtV3BtNIMs8DGR4K7DHBvfXB6eIxsNa+deW0S8k= snibbles@server1
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA3nO3g6GI0mM6yZ3Ts3H6oSqVK3B3n/JDV5D5ZE5txy snibbles@server1
 -------------
 /home/tiger/.ssh/authorized_keys
 -----------------------
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC8ZzLITCYWPgPwxfmxFkn2HFCs0MB4QE6iGe0ft4NP37jn2Z+6IQTtTQyhTxGjWJPLcG/FWTuAP5abGX5ZV0i6mT7BAsQKsWdNwYGh7p5UPYzeqJRzlF9vNg6rgXEseanRnkJCjTLIxNCtNvCrGJCpkLlle4SIfIt6z0goyxQQG4nAqZh58s9ahgIgZf0ccMy9KP9WpOuwy75lgRCJClLfBpsVA3cWoQ7GeiuSBcfRDI+FS1ryseUfvfYAa+xBJqlf8hdaZgf06s4nkKtQXsq8sgr9BDIIIMmx5Tre1oDWi8c49xaa0tKP71IqAkEfSbsZ30xVUGeICXC99t9ZxSkMRG4WfeUR9i66+vuHOLD3QUyFVybP4SfOWK1vq7QcmzjYFvcbDJI12n+lbQk7UXA62Ro5cqWrKKzYUbGBDrSLQISvM7Y9PsvbXU1JkMgnrlhwtaw/FStS5Oncl5QCJJr44haPmbo2DkY9/SRAteWwiNxCagrBW8iW4PpTJiDJqt0= tiger@server1
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK+5pWZDzSxZVDmwuxrGJ9QyaJMO0s+L6ry9290RBthu tiger@server1
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCf6R5lr7nnoZD1NsIU+fjDzA8vRy9qKTcw3XuXmZiRkArr418kzeUfWN6IFIltQSxuLY2y/hHZAkGHS9uwmfFaVft/8khXdeBZlfLFzeoZAc5DKKt9hbGzeEox81lL89IBO594BuOyMn2zopC/zWdNStZW08L0+Er19eE8/b3fZbtmkLlPNkCE+deQ6WF3WsU473pGZsQ/0AldEib7PEddvoXvywb4gm8j05+wLShRH/zUjtZWLjNZNOiro8PbStQ1LM0CXI0mBv5dpgsbXyp9OB5o6/QXJDhN0zslYtnbRR3DjO99r1+lH9wedWTZZo+xHvVwQ9VsnfzHhp/JaOP5xMFbplxqH9ovOacEKymgJqDfHfqMRoKqJBBMt1eexpyPNeacLLIQTbNMqxrUNZisFv5RqQllO/0zooBukKHvXJ4dTS9wAqH6gobpROq+g/w0gEJfzuVIFapAJDqQQ4qXa/558B7wJYPJZCm+/OtlhQJAgeTDLvZOibWkI+livl0= tiger@server1
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIChhnErITbJ3XbN0pF4nf70i3jbBO4Xw8Xj6e2PupbPU tiger@server1
 -------------
 /home/yoda/.ssh/authorized_keys
 -----------------------
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCyzWrKWXlcfIDfHcnJmJCeyG/x2WUNw0UcT1J/Cy2xrkaHsH/gxuseIHNGbpN2UEeeg7Ocq6NaTDBqO2IP6leKYhTKV3VYWhzrx+1ZD0UWvo8MOL5sQSxerQmNu8vJno4C/4bYM5YrA3rBQsmQURxvK1e222wjamyO1gRMi45TOv39qWxB9+n8Eu4aSjb6XWPt0vQesT8PpMZ4MJwu3UgWA5uVKViWBOkvyCwFkRrTT9xNqvUBVQ/37AxJ/eHGHyPd3lfgyeu7eDXf+Bcct7qHV4w5BDi1qUGB1OwKcLT6YLOZ8dAGdvVg4Uan+R7hY5FHP/21IO8Jd4foNtV0Zd38ose/9yU8XtKBvyEaRoCHZ4GJjrl03dHeqVN16+XuZcvn2ARo1bME21O5tFlH0sNC01FR0at4N2cMxQoJw48HBIhoiZ5vvkFvRvJmhzENljJ38c0djxMuNqDP3AR3jD8+4P6NXW1RY9UqU+3ZBYBmlGGi6P49c02ivTrgnkWSLkM= yoda@server1
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJF6f6KOqTwwpjCpzZ6BgraYzRKmk2PBOlz2DbOLdmaz yoda@server1
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCw3PwacP1v9U23qGJi4TXbwjLtiYn71mB9btB9XOLBFxbkJUyC7GkwhVp3t/7v0mje/HitjAaqwSqMBYU3CWVGMdbrr3E1awYgowTeg+Gq3HKvCAxlYheZh8WKurI4kZaAJIhPehTcWCCBwTq9DEkR5LEqhQ6Ps8RqZvE9E0LBngqJj6k8maoM2EYgtDJ+M+9M/CNiFgEjMN0lutRtBIwB4JswliRUPsMHNhMjfKe7i6mo8eDsIpk3SYTaJGJ0avNRu6XtQiWS8frA4pL+GsnG1vd177FZWrVS4SpxE/7FReCPgOxp0FhPIVdL6TazDvUgBf3qdRr+knNLce+YCVW7+zojYRYTyuMM4M0IYmjuSM27QOdP8wLWskAnTRWQ2/h9SGRCHBIFsygZYiCOwAB8fGNLKbJ3Na5XoYgx8gUKM4n13me9MAaXgVl7Mcmv1Xl3SQtSOpUNsW512AQY8FeBeWnqex+KuBhuSmVtbJc+kVVdNkYU1RILrQbJmKFKPLc= yoda@server1
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGHT0FUcXqhgTDOUVu03n7wna1pIDGK6VdwTSfyxygNT yoda@server1
 -------------
 ------------------------------
 
