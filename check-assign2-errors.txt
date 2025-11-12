@@ -1,0 +1,118 @@
+--2025-11-11 18:53:21--  https://github.com/zonzorp/COMP2137/raw/main/makecontainers.sh
+Resolving github.com (github.com)... 140.82.113.3
+Connecting to github.com (github.com)|140.82.113.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://raw.githubusercontent.com/zonzorp/COMP2137/main/makecontainers.sh [following]
+--2025-11-11 18:53:22--  https://raw.githubusercontent.com/zonzorp/COMP2137/main/makecontainers.sh
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.108.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 15594 (15K) [text/plain]
+Saving to: ‘/home/curtis/makecontainers.sh’
+
+     0K .......... .....                                      100% 5.47M=0.003s
+
+2025-11-11 18:53:22 (5.47 MB/s) - ‘/home/curtis/makecontainers.sh’ saved [15594/15594]
+
+Failed to connect to bus: No such file or directory
+Traceback (most recent call last):
+  File "/usr/sbin/netplan", line 23, in <module>
+    netplan.main()
+  File "/usr/share/netplan/netplan/cli/core.py", line 56, in main
+    self.run_command()
+  File "/usr/share/netplan/netplan/cli/utils.py", line 243, in run_command
+    self.func()
+  File "/usr/share/netplan/netplan/cli/commands/apply.py", line 63, in run
+    self.run_command()
+  File "/usr/share/netplan/netplan/cli/utils.py", line 243, in run_command
+    self.func()
+  File "/usr/share/netplan/netplan/cli/commands/apply.py", line 164, in command_apply
+    utils.systemctl_daemon_reload()
+  File "/usr/share/netplan/netplan/cli/utils.py", line 140, in systemctl_daemon_reload
+    subprocess.check_call(['systemctl', 'daemon-reload'])
+  File "/usr/lib/python3.10/subprocess.py", line 369, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['systemctl', 'daemon-reload']' returned non-zero exit status 1.
+dpkg-preconfigure: unable to re-open stdin: No such file or directory
+Warning: Permanently added 'server1-mgmt' (ED25519) to the list of known hosts.
+grep: /etc/netplan/00-installer-config.yaml: No such file or directory
+sed: can't read /etc/netplan/00-installer-config.yaml: No such file or directory
+WARNING:root:Cannot call Open vSwitch: ovsdb-server.service is not running.
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.34.0 /usr/local/share/perl/5.34.0 /usr/lib/x86_64-linux-gnu/perl5/5.34 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.34 /usr/share/perl/5.34 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7, <> line 42.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Saving key "/home/dennis/.ssh/id_rsa" failed: Permission denied
+Saving key "/home/dennis/.ssh/id_ed25519" failed: Permission denied
+cat: /home/dennis/.ssh/id_rsa.pub: No such file or directory
+cat: /home/dennis/.ssh/id_ed25519.pub: No such file or directory
+Saving key "/home/aubrey/.ssh/id_rsa" failed: Permission denied
+Saving key "/home/aubrey/.ssh/id_ed25519" failed: Permission denied
+cat: /home/aubrey/.ssh/id_rsa.pub: No such file or directory
+cat: /home/aubrey/.ssh/id_rsa.pub: No such file or directory
+cat: /home/aubrey/.ssh/id_ed25519.pub: No such file or directory
+cat: /home/aubrey/.ssh/id_ed25519.pub: No such file or directory
+Saving key "/home/captain/.ssh/id_rsa" failed: Permission denied
+Saving key "/home/captain/.ssh/id_ed25519" failed: Permission denied
+cat: /home/captain/.ssh/id_rsa.pub: No such file or directory
+cat: /home/captain/.ssh/id_rsa.pub: No such file or directory
+cat: /home/captain/.ssh/id_ed25519.pub: No such file or directory
+cat: /home/captain/.ssh/id_ed25519.pub: No such file or directory
+Saving key "/home/snibbles/.ssh/id_rsa" failed: Permission denied
+Saving key "/home/snibbles/.ssh/id_ed25519" failed: Permission denied
+cat: /home/snibbles/.ssh/id_rsa.pub: No such file or directory
+cat: /home/snibbles/.ssh/id_rsa.pub: No such file or directory
+cat: /home/snibbles/.ssh/id_ed25519.pub: No such file or directory
+cat: /home/snibbles/.ssh/id_ed25519.pub: No such file or directory
+Saving key "/home/brownie/.ssh/id_rsa" failed: Permission denied
+Saving key "/home/brownie/.ssh/id_ed25519" failed: Permission denied
+cat: /home/brownie/.ssh/id_rsa.pub: No such file or directory
+cat: /home/brownie/.ssh/id_rsa.pub: No such file or directory
+cat: /home/brownie/.ssh/id_ed25519.pub: No such file or directory
+cat: /home/brownie/.ssh/id_ed25519.pub: No such file or directory
+Saving key "/home/scooter/.ssh/id_rsa" failed: Permission denied
+Saving key "/home/scooter/.ssh/id_ed25519" failed: Permission denied
+cat: /home/scooter/.ssh/id_rsa.pub: No such file or directory
+cat: /home/scooter/.ssh/id_rsa.pub: No such file or directory
+cat: /home/scooter/.ssh/id_ed25519.pub: No such file or directory
+cat: /home/scooter/.ssh/id_ed25519.pub: No such file or directory
+Saving key "/home/sandy/.ssh/id_rsa" failed: Permission denied
+Saving key "/home/sandy/.ssh/id_ed25519" failed: Permission denied
+cat: /home/sandy/.ssh/id_rsa.pub: No such file or directory
+cat: /home/sandy/.ssh/id_rsa.pub: No such file or directory
+cat: /home/sandy/.ssh/id_ed25519.pub: No such file or directory
+cat: /home/sandy/.ssh/id_ed25519.pub: No such file or directory
+Saving key "/home/perrier/.ssh/id_rsa" failed: Permission denied
+Saving key "/home/perrier/.ssh/id_ed25519" failed: Permission denied
+cat: /home/perrier/.ssh/id_rsa.pub: No such file or directory
+cat: /home/perrier/.ssh/id_rsa.pub: No such file or directory
+cat: /home/perrier/.ssh/id_ed25519.pub: No such file or directory
+cat: /home/perrier/.ssh/id_ed25519.pub: No such file or directory
+Saving key "/home/cindy/.ssh/id_rsa" failed: Permission denied
+Saving key "/home/cindy/.ssh/id_ed25519" failed: Permission denied
+cat: /home/cindy/.ssh/id_rsa.pub: No such file or directory
+cat: /home/cindy/.ssh/id_rsa.pub: No such file or directory
+cat: /home/cindy/.ssh/id_ed25519.pub: No such file or directory
+cat: /home/cindy/.ssh/id_ed25519.pub: No such file or directory
+Saving key "/home/tiger/.ssh/id_rsa" failed: Permission denied
+Saving key "/home/tiger/.ssh/id_ed25519" failed: Permission denied
+cat: /home/tiger/.ssh/id_rsa.pub: No such file or directory
+cat: /home/tiger/.ssh/id_rsa.pub: No such file or directory
+cat: /home/tiger/.ssh/id_ed25519.pub: No such file or directory
+cat: /home/tiger/.ssh/id_ed25519.pub: No such file or directory
+Saving key "/home/yoda/.ssh/id_rsa" failed: Permission denied
+Saving key "/home/yoda/.ssh/id_ed25519" failed: Permission denied
+cat: /home/yoda/.ssh/id_rsa.pub: No such file or directory
+cat: /home/yoda/.ssh/id_rsa.pub: No such file or directory
+cat: /home/yoda/.ssh/id_ed25519.pub: No such file or directory
+cat: /home/yoda/.ssh/id_ed25519.pub: No such file or directory
+WARNING:root:Cannot call Open vSwitch: ovsdb-server.service is not running.
+Error: Command not found
+Error: Command not found
+grep: /etc/netplan/00-installer-config.yaml: No such file or directory
+sed: can't read /etc/netplan/00-installer-config.yaml: No such file or directory
+WARNING:root:Cannot call Open vSwitch: ovsdb-server.service is not running.
+WARNING:root:Cannot call Open vSwitch: ovsdb-server.service is not running.
