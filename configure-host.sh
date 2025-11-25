@@ -1,4 +1,7 @@
 #!/bin/bash
+# Assignment 03 - COMP2137
+# Script: configure-host.sh
+# Covers: hostname, IP, host entry, verbose option, syslog logging, error handling
 
 # -------------------------------------------------------------------
 # Termination signals
