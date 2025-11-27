@@ -1,6 +1,5 @@
 #!/bin/bash
-# Assignment 03 - COMP2137
-# Script: configure-host.sh
+
 # Covers: hostname, IP, host entry, verbose option, syslog logging, error handling
 
 # -------------------------------------------------------------------
@@ -91,23 +90,37 @@ if [[ -n "$HOSTNAME" ]]; then
 fi
 
 # -------------------------------------------------------------------
-# IP address update logic (-ip)
-# Confirms and applies IP changes, updates netplan and /etc/hosts
+# IP address update logic (-ip) — FIXED
+# Confirms and applies IP changes, updates netplan and /etc/hosts safely
 # -------------------------------------------------------------------
 if [[ -n "$IPADDR" ]]; then
     INTERFACE=$(ip route | awk '/default/ {print $5; exit}')
     CURRENT_IP=$(ip -4 addr show "$INTERFACE" | awk '/inet / {print $2}' | cut -d/ -f1)
+    CURRENT_CIDR=$(ip -4 addr show "$INTERFACE" | awk '/inet / {print $2}' | cut -d/ -f2)
+
     if [[ "$CURRENT_IP" != "$IPADDR" ]]; then
-        NETPLAN_FILE=$(find /etc/netplan -name "*.yaml" | head -n 1)
-        sed -i "s/addresses: \[.*\]/addresses: [$IPADDR\/24]/" "$NETPLAN_FILE"
-        test_success "Failed to update netplan file"
+        # Safe netplan update
+        netplan set "network.ethernets.${INTERFACE}.addresses=[${IPADDR}/${CURRENT_CIDR}]"
+        test_success "Failed to set netplan address"
+
+        netplan generate
+        test_success "Netplan generate failed"
+
         netplan apply
         test_success "Failed to apply netplan"
-        sed -i "/127.0.1.1/c\\$IPADDR\t$(hostname)" /etc/hosts
+
+        # Update /etc/hosts safely
+        if grep -q "$(hostname)" /etc/hosts; then
+            sed -i "s/^.*$(hostname)\$/${IPADDR}\t$(hostname)/" /etc/hosts
+        else
+            echo -e "${IPADDR}\t$(hostname)" >> /etc/hosts
+        fi
+
         ip addr flush dev "$INTERFACE"
-        ip addr add "$IPADDR/24" dev "$INTERFACE"
+        ip addr add "${IPADDR}/${CURRENT_CIDR}" dev "$INTERFACE"
         ip link set "$INTERFACE" up
-        log_change "IP address changed from $CURRENT_IP to $IPADDR on $INTERFACE"
+
+        log_change "IP address changed from $CURRENT_IP to $IPADDR/${CURRENT_CIDR} on $INTERFACE"
     elif [[ $VERBOSE -eq 1 ]]; then
         echo "IP address already set to $IPADDR"
     fi
