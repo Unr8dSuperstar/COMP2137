@@ -1,6 +1,5 @@
 #!/bin/bash
-# Assignment 03 - COMP2137
-# Script: lab3.sh
+
 # Covers: loghost setup, web host setup, verbose mode, error handling
 
 # Enable verbose mode if passed
